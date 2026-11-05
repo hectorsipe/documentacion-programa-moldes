@@ -47,6 +47,7 @@ const NAV = [
   { seccion: "Ayuda", paginas: [
     ["faq.html", "Preguntas frecuentes"],
     ["glosario.html", "Glosario"],
+    ["historial-versiones.html", "Historial de versiones"],
   ]},
 ];
 

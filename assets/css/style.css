@@ -14,6 +14,7 @@
   --previsto: #B9C8DA;
   --bueno: #2EA44F;
   --malo: #D64545;
+  --et-nov-bg: #DFF3E4; --et-nov: #176B33; --et-cor-bg: #FFEFD0; --et-cor: #8A5A00;
   --sombra: 0 1px 3px rgba(16, 38, 64, .08), 0 4px 16px rgba(16, 38, 64, .06);
   --ancho-menu: 280px;
   --alto-cabecera: 60px;
@@ -25,6 +26,7 @@
     --borde: #2A3542; --nota: #1A2B3D; --aviso: #3A2E17; --aviso-borde: #C89235;
     --sombra: 0 1px 3px rgba(0,0,0,.4);
     --previsto: #3F5269; --bueno: #4CC36E; --malo: #F07272;
+    --et-nov-bg: #1D3A27; --et-nov: #7FDB9B; --et-cor-bg: #40311A; --et-cor: #F0B44C;
   }
 }
 :root[data-theme="dark"] {
@@ -33,6 +35,7 @@
   --borde: #2A3542; --nota: #1A2B3D; --aviso: #3A2E17; --aviso-borde: #C89235;
   --sombra: 0 1px 3px rgba(0,0,0,.4);
   --previsto: #3F5269; --bueno: #4CC36E; --malo: #F07272;
+  --et-nov-bg: #1D3A27; --et-nov: #7FDB9B; --et-cor-bg: #40311A; --et-cor: #F0B44C;
 }
 
 * { box-sizing: border-box; }
@@ -214,6 +217,20 @@ details[open] summary { border-bottom: 1px solid var(--borde); margin-bottom: 8p
 .rol b { display: block; margin: 6px 0 2px; color: var(--azul); }
 .rol p { margin: 0 0 8px; font-size: 14px; color: var(--texto-2); line-height: 1.45; }
 .rol a { font-size: 14px; font-weight: 600; }
+
+/* Historial de versiones */
+.version-cab { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+.version-cab small { font-size: 14px; font-weight: 400; color: var(--texto-2); }
+.version-resumen { margin: -4px 0 12px; color: var(--texto-2); font-style: italic; }
+.cambios { list-style: none; padding: 0; margin: 10px 0; }
+.cambios > li { margin: 0; padding: 10px 0; border-bottom: 1px solid var(--borde); }
+.cambios > li:last-child { border-bottom: 0; }
+.etiqueta { display: inline-block; margin-right: 8px; padding: 0 9px; border-radius: 10px; font-size: 12px; font-weight: 700; line-height: 1.7; vertical-align: 1px;
+  background: var(--azul-claro); color: var(--azul); white-space: nowrap; }
+.etiqueta.novedad { background: var(--et-nov-bg); color: var(--et-nov); }
+.etiqueta.correccion { background: var(--et-cor-bg); color: var(--et-cor); }
+.cambios .mas { display: block; margin-top: 2px; font-size: 14px; }
+.version-actual { margin-left: 6px; padding: 0 9px; border-radius: 10px; background: var(--azul-app); color: #fff; font-size: 12px; font-weight: 700; vertical-align: 2px; }
 
 @media (max-width: 800px) {
   .fases { grid-template-columns: 1fr; gap: 28px; }

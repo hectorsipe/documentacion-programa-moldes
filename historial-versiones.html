@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Historial de versiones</title>
+<meta name="description" content="Novedades, mejoras y correcciones de cada versión de Gestión de Moldes, de la más reciente a la más antigua.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="contenido">
+<article>
+<h1>Historial de versiones</h1>
+<p class="entradilla">Qué ha cambiado en cada actualización de <b>Gestión de Moldes</b>, de la más reciente a la más antigua. Cuando un cambio tiene guía,
+te enlazamos a ella para que veas cómo se usa.</p>
+
+<p>Cada cambio lleva una etiqueta: <span class="etiqueta novedad">Novedad</span> una función nueva,
+<span class="etiqueta">Mejora</span> algo que ya existía y ahora es más cómodo o completo, y
+<span class="etiqueta correccion">Corrección</span> un error que se ha arreglado. Este historial recoge las versiones desde la 1.9.3.</p>
+
+<h2 id="resumen">Resumen</h2>
+<div class="tabla-scroll"><table>
+<thead><tr><th>Versión</th><th>Fecha</th><th>Lo más destacado</th></tr></thead>
+<tbody>
+<tr><td><a href="#v1-9-10">1.9.10</a></td><td>29 oct 2026</td><td>Los listados recuerdan filtros y página, y puedes limpiarlos con un clic. Seleccionar varias tareas a la vez en la estimación.</td></tr>
+<tr><td><a href="#v1-9-9">1.9.9</a></td><td>7 oct 2026</td><td>El terminal de fichaje se actualiza solo cada 10 segundos.</td></tr>
+<tr><td><a href="#v1-9-8">1.9.8</a></td><td>24 ago 2026</td><td>Firma de albaranes en pantalla, envío por correo y exportación de las listas de la estimación.</td></tr>
+<tr><td><a href="#v1-9-7">1.9.7</a></td><td>19 jun 2026</td><td>Corrección al finalizar fichajes en el terminal.</td></tr>
+<tr><td><a href="#v1-9-6">1.9.6</a></td><td>17 jun 2026</td><td>Duplicar presupuestos ya aprobados.</td></tr>
+<tr><td><a href="#v1-9-5">1.9.5</a></td><td>8 jun 2026</td><td>Opción para mostrar el código del presupuesto delante en la ficha técnica.</td></tr>
+<tr><td><a href="#v1-9-4">1.9.4</a></td><td>26 may 2026</td><td>Código del presupuesto en la ficha técnica y en el listado. Informe de situación con todas las fases previstas.</td></tr>
+<tr><td><a href="#v1-9-3">1.9.3</a></td><td>25 may 2026</td><td>Paquete de mejoras de uso en presupuestos, proyectos y terminal de fichaje.</td></tr>
+</tbody></table></div>
+
+<h2 id="v1-9-10" class="version-cab">Versión 1.9.10 <span class="version-actual">Última</span> <small>29 de octubre de 2026</small></h2>
+<p class="version-resumen">Los listados recuerdan lo que estabas haciendo.</p>
+<ul class="cambios">
+ <li><span class="etiqueta">Mejora</span><b>Los listados recuerdan tu búsqueda, tus filtros y la página.</b> Si abres una ficha y vuelves al listado, lo encuentras como lo dejaste, sin tener que volver a filtrar.
+ Funciona en proyectos, presupuestos, albaranes de cliente y de proveedor, listados de fichajes y listados de Configuración, y se mantiene mientras sigas con la misma pestaña del navegador abierta.
+ <a class="mas" href="listados.html">Más información: Trabajar con los listados</a></li>
+ <li><span class="etiqueta novedad">Novedad</span><b>Botón «Limpiar filtros».</b> Cuando un listado tiene filtros aplicados aparece un icono de embudo tachado; con un clic vuelves a los valores por defecto.</li>
+ <li><span class="etiqueta">Mejora</span><b>Las pestañas recuerdan dónde estabas.</b> En Configuración (empleados, máquinas, materiales y trabajos) y en el listado de fichajes de Producción, al volver se abre la última pestaña que usaste.</li>
+ <li><span class="etiqueta">Mejora</span><b>Añadir varias tareas a la vez en la estimación.</b> La ventana de tareas tiene ahora casillas de selección: marcas todas las que necesites y pulsas <span class="boton">Seleccionar</span>, que indica cuántas llevas marcadas.
+ <a class="mas" href="guia-presupuesto-estimar.html">Más información: Estimar costes con detalle</a></li>
+ <li><span class="etiqueta">Mejora</span><b>Menos avisos del navegador al escribir.</b> Dejan de aparecer las sugerencias de guardado y autocompletado de direcciones en los campos de nombre y dirección de presupuestos, proyectos, albaranes, clientes y configuración.</li>
+ <li><span class="etiqueta correccion">Corrección</span><b>Informe de situación.</b> Se corrige un error al abrir la situación de un proyecto con fases sin avance registrado: esas fases se muestran ahora al 0&nbsp;%.
+ <a class="mas" href="guia-proyecto-situacion.html">Más información: Informar al cliente de la situación</a></li>
+</ul>
+
+<h2 id="v1-9-9" class="version-cab">Versión 1.9.9 <small>7 de octubre de 2026</small></h2>
+<p class="version-resumen">Terminal de fichaje siempre al día.</p>
+<ul class="cambios">
+ <li><span class="etiqueta">Mejora</span><b>El terminal de fichaje se actualiza solo.</b> Cada 10 segundos revisa los trabajos en marcha, de modo que si un compañero inicia o finaliza una tarea, la ves aparecer o desaparecer sin recargar la pantalla.
+ <a class="mas" href="guia-taller-fichar.html">Más información: Fichar en el taller</a></li>
+</ul>
+
+<h2 id="v1-9-8" class="version-cab">Versión 1.9.8 <small>24 de agosto de 2026</small></h2>
+<p class="version-resumen">Albaranes firmados y enviados sin salir de la aplicación.</p>
+<ul class="cambios">
+ <li><span class="etiqueta novedad">Novedad</span><b>Firma de albaranes.</b> El albarán de proyecto tiene un botón <span class="boton">Firmar</span>: el cliente firma con el dedo en la tablet al recoger el molde y la firma queda guardada.
+ En el PDF aparece en el recuadro «Firma cliente», junto a los importes.
+ <a class="mas" href="guia-venta-albaran.html">Más información: Emitir un albarán al cliente</a></li>
+ <li><span class="etiqueta novedad">Novedad</span><b>Envío de albaranes por correo.</b> Con el albarán guardado, el botón <span class="boton">Enviar</span> abre una ventana donde escribes el destinatario, el asunto y el mensaje, y envía el albarán en PDF.
+ El correo sale de la cuenta que se configura en el nuevo apartado <b>Configuración › Email</b>, disponible para administradores.
+ <a class="mas" href="guia-puesta-en-marcha.html">Más información: Puesta en marcha</a></li>
+ <li><span class="etiqueta novedad">Novedad</span><b>Email de contacto en los clientes.</b> La ficha del cliente tiene un nuevo campo <span class="campo">Email Contacto</span>.</li>
+ <li><span class="etiqueta novedad">Novedad</span><b>Exportar las listas de la estimación.</b> En la estimación de un presupuesto, el botón <span class="boton">Exportar listas</span> genera un PDF con las tareas y los materiales estimados.
+ <a class="mas" href="guia-presupuesto-estimar.html">Más información: Estimar costes con detalle</a></li>
+ <li><span class="etiqueta">Mejora</span><b>Nuevo estado «Entregado» en los proyectos.</b> Sustituye al antiguo «No iniciado» y se muestra en azul. Los proyectos entregados aparecen ya en el listado junto a los pendientes y en curso.
+ <a class="mas" href="guia-proyecto-seguimiento.html">Más información: Seguir un proyecto</a></li>
+ <li><span class="etiqueta">Mejora</span><b>Albarán de proyecto rediseñado.</b> Los importes (base imponible, IVA y total) y la firma del cliente se colocan en la parte inferior: la firma a la izquierda y los importes a la derecha.</li>
+ <li><span class="etiqueta">Mejora</span><b>Listados de fichajes más ágiles.</b> Al cambiar las fechas desde y hasta, el listado se consulta una sola vez en lugar de dos.</li>
+</ul>
+
+<h2 id="v1-9-7" class="version-cab">Versión 1.9.7 <small>19 de junio de 2026</small></h2>
+<p class="version-resumen">Corrección en el terminal de fichaje.</p>
+<ul class="cambios">
+ <li><span class="etiqueta correccion">Corrección</span><b>Finalizar fichajes.</b> Se corrige un error al finalizar una tarea desde el terminal, con los botones de finalizar y reanudar: la hora de fin podía no registrarse correctamente. Ahora se guarda la hora real en la que pulsas el botón.
+ <a class="mas" href="guia-taller-fichar.html">Más información: Fichar en el taller</a></li>
+</ul>
+
+<h2 id="v1-9-6" class="version-cab">Versión 1.9.6 <small>17 de junio de 2026</small></h2>
+<p class="version-resumen">Más flexibilidad con los presupuestos aprobados.</p>
+<ul class="cambios">
+ <li><span class="etiqueta">Mejora</span><b>Duplicar un presupuesto aunque esté aprobado.</b> El botón <span class="boton">Duplicar Presupuesto</span> sigue disponible en presupuestos aprobados con proyecto, que no se pueden modificar. Así puedes partir de ellos para preparar una nueva oferta.
+ <a class="mas" href="guia-presupuesto-versiones.html">Más información: Versiones y duplicados</a></li>
+ <li><span class="etiqueta">Mejora</span><b>Tipo de cálculo de coste en el listado de máquinas.</b> En Configuración › Máquinas, una nueva columna <span class="campo">Tipo Cálculo Coste</span> muestra de un vistazo cómo se calcula el coste de cada máquina.
+ <a class="mas" href="guia-presupuesto-estimar.html">Más información: Cómo se calcula el coste por hora</a></li>
+</ul>
+
+<h2 id="v1-9-5" class="version-cab">Versión 1.9.5 <small>8 de junio de 2026</small></h2>
+<p class="version-resumen">Más control sobre cómo se muestra el código del presupuesto.</p>
+<ul class="cambios">
+ <li><span class="etiqueta novedad">Novedad</span><b>Dar prioridad al código del presupuesto en las fichas técnicas.</b> En Configuración › Informes, el nuevo bloque <span class="campo">Fichas técnicas de Presupuesto</span> permite elegir si el código del presupuesto se muestra antes que la referencia.
+ <a class="mas" href="guia-informes.html">Más información: Exportar listados e informes</a></li>
+ <li><span class="etiqueta">Mejora</span><b>Cabecera de la ficha técnica reorganizada.</b> La referencia y el código ocupan columnas separadas, lo que los hace más fáciles de leer.</li>
+ <li><span class="etiqueta correccion">Corrección</span><b>Código al duplicar un presupuesto.</b> Al duplicar un presupuesto, la copia recibe ahora correctamente un código nuevo.</li>
+</ul>
+
+<h2 id="v1-9-4" class="version-cab">Versión 1.9.4 <small>26 de mayo de 2026</small></h2>
+<p class="version-resumen">El código del presupuesto, a la vista; y la situación del proyecto, más completa.</p>
+<ul class="cambios">
+ <li><span class="etiqueta novedad">Novedad</span><b>Código numérico en las fichas técnicas.</b> El código del presupuesto aparece junto a la referencia en la ficha técnica impresa, se muestra también en la ficha técnica de proyecto y en una nueva columna del listado de Presupuestos.
+ <a class="mas" href="guia-presupuesto-ficha.html">Más información: Rellenar la ficha técnica</a></li>
+ <li><span class="etiqueta">Mejora</span><b>Informe de situación con todas las fases previstas.</b> Las fases y tareas de la estimación aparecen aunque todavía no tengan horas fichadas, para que puedas comparar siempre lo estimado con lo acumulado.
+ <a class="mas" href="guia-proyecto-situacion.html">Más información: Informar al cliente de la situación</a></li>
+ <li><span class="etiqueta">Mejora</span><b>Continuar con la última tarea en el terminal.</b> Al responder que sí a «continuar con la última tarea» (también con máquinas automáticas), la tarea anterior ya aparece elegida.
+ <a class="mas" href="guia-taller-fichar.html">Más información: Fichar en el taller</a></li>
+</ul>
+
+<h2 id="v1-9-3" class="version-cab">Versión 1.9.3 <small>25 de mayo de 2026</small></h2>
+<p class="version-resumen">Paquete de mejoras de uso.</p>
+
+<h3 id="v1-9-3-presupuestos">Presupuestos y estimación</h3>
+<ul class="cambios">
+ <li><span class="etiqueta novedad">Novedad</span><b>Código del presupuesto.</b> Cada presupuesto tiene un <span class="campo">Código</span> que se asigna automáticamente al guardarlo por primera vez.
+ <a class="mas" href="guia-presupuesto-crear.html">Más información: Crear un presupuesto</a></li>
+ <li><span class="etiqueta">Mejora</span><b>Seleccionar y borrar varias líneas a la vez.</b> En las tareas y en los materiales de la estimación hay casillas de selección y los botones <span class="boton">Borrar seleccionados</span> y <span class="boton">Borrar todas</span>.</li>
+ <li><span class="etiqueta">Mejora</span><b>Incluir todas las familias de materiales de golpe</b> con el enlace «Incluir todas las familias».
+ <a class="mas" href="guia-presupuesto-estimar.html">Más información: Estimar costes con detalle</a></li>
+ <li><span class="etiqueta">Mejora</span><b>Total de horas a la vista.</b> La estimación muestra el total de horas junto al coste, y el bloque de tareas pasa a ir antes que el de materiales.</li>
+ <li><span class="etiqueta">Mejora</span><b>Códigos en tareas y familias.</b> Las tareas se muestran como «código - nombre». Las familias de materiales tienen un campo <span class="campo">Código</span> (Configuración › Materiales) que se ve en la estimación y en los materiales del proyecto. Los materiales sin familia aparecen como «Otros materiales».</li>
+ <li><span class="etiqueta">Mejora</span><b>Ficha técnica de proyecto con el total de piezas.</b> El número de piezas es ahora el total, y se detalla cuántas hay de cada tipo de pieza.
+ <a class="mas" href="guia-presupuesto-ficha.html">Más información: Rellenar la ficha técnica</a></li>
+ <li><span class="etiqueta">Mejora</span><b>Acceso directo al proyecto desde el presupuesto.</b> En un presupuesto aprobado, el bloque Proyecto muestra su referencia con un icono de ojo para abrirlo.
+ <a class="mas" href="guia-presupuesto-aprobar.html">Más información: Aprobar y generar el proyecto</a></li>
+</ul>
+
+<h3 id="v1-9-3-proyectos">Proyectos</h3>
+<ul class="cambios">
+ <li><span class="etiqueta novedad">Novedad</span><b>Asignar presupuesto a un proyecto.</b> Un proyecto creado sin presupuesto tiene ahora el botón <span class="boton">Asignar presupuesto</span>: escribes la referencia del presupuesto y se vincula, con su estimación.
+ <a class="mas" href="guia-presupuesto-aprobar.html">Más información: Aprobar y generar el proyecto</a></li>
+ <li><span class="etiqueta">Mejora</span><b>Materiales del proyecto editables.</b> En la pestaña Materiales / Subcontratas puedes editar o eliminar cada línea, o marcar varias y eliminarlas de una vez, con confirmación previa.
+ <a class="mas" href="guia-proyecto-seguimiento.html">Más información: Seguir un proyecto</a></li>
+</ul>
+
+<h3 id="v1-9-3-taller">Terminal de fichaje</h3>
+<ul class="cambios">
+ <li><span class="etiqueta novedad">Novedad</span><b>Trabajos manuales y automáticos por separado.</b> Un botón alterna entre <span class="boton">Mostrar máquinas</span> y <span class="boton">Mostrar tareas</span>, así las tarjetas del taller no se mezclan.</li>
+ <li><span class="etiqueta">Mejora</span><b>Horas de las máquinas automáticas.</b> Al finalizar un trabajo automático se pide, con un teclado numérico en pantalla, las horas que ha trabajado la máquina, y el fichaje se cierra con ese tiempo.
+ <a class="mas" href="guia-taller-fichar.html">Más información: Fichar en el taller</a></li>
+</ul>
+
+<h3 id="v1-9-3-permisos">Perfiles de usuario</h3>
+<ul class="cambios">
+ <li><span class="etiqueta">Mejora</span><b>Cada perfil ve lo que le corresponde.</b> El menú se ajusta al perfil: el administrador accede a todo y el empleado solo a lo que necesita para su trabajo. Además, solo el administrador puede borrar proyectos.
+ <a class="mas" href="acceso.html">Más información: Acceder y moverse por la aplicación</a></li>
+</ul>
+</article>
+</main>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
