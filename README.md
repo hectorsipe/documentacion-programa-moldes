@@ -27,6 +27,10 @@ Elementos disponibles en el contenido: `<ol class="pasos">` (pasos numerados), `
 
 El buscador lee las páginas que hay en `NAV`, así que no hay que mantener ningún índice aparte.
 
+## Publicar una versión nueva
+
+Añade un bloque al principio de `historial-versiones.html` (copia uno existente), actualiza la tabla «Resumen» y mueve la etiqueta «Última» a la versión nueva.
+
 ## Ver la web en local
 
 Desde esta carpeta: `python -m http.server 8000` y abre http://localhost:8000. (Abrir los HTML con doble clic funciona, pero el buscador

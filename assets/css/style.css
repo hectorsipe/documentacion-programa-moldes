@@ -159,6 +159,8 @@ details[open] summary { border-bottom: 1px solid var(--borde); margin-bottom: 8p
 /* Página "Qué hace el programa" */
 .destacado { display: flex; gap: 14px; align-items: center; margin: 22px 0; padding: 16px 20px; border-radius: 12px;
   background: var(--azul-claro); color: var(--texto); border: 1px solid var(--azul-app); }
+.destacados { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; margin: 22px 0; }
+.destacados .destacado { margin: 0; }
 .destacado:hover { text-decoration: none; box-shadow: var(--sombra); }
 .destacado svg { flex: none; width: 34px; height: 34px; color: var(--azul-app); }
 .destacado b { display: block; color: var(--azul); font-size: 17px; }
