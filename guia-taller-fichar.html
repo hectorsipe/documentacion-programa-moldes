@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fichar en el taller · Gestión de Moldes</title>
+<meta name="description" content="Guía para operarios: identificarse, fichar entrada y salida, iniciar, finalizar y reanudar tareas e indicar incidencias.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="contenido">
+<article>
+<h1>Fichar en el taller</h1>
+<p class="entradilla">En el taller hay una tablet o un ordenador con el <b>terminal de fichaje</b>. Está pensado para usarse con el dedo:
+teclado numérico en pantalla y botones grandes. Esta guía es para los operarios.</p>
+<figure><img src="img/terminal-activos.jpg" alt="Terminal de fichaje con los trabajos en marcha del taller" loading="lazy"><figcaption>Terminal de fichaje con los trabajos en marcha del taller</figcaption></figure>
+<p>Cuando nadie está identificado, el terminal muestra los trabajos que hay en marcha en ese momento: quién, en qué molde, tarea y máquina,
+desde qué hora y cuánto tiempo lleva.</p>
+
+<h2 id="1-identificarse">1. Identificarse</h2>
+<figure><img src="img/terminal-empleado.jpg" alt="Identificación con el código de empleado" loading="lazy"><figcaption>Identificación con el código de empleado</figcaption></figure>
+<ol class="pasos"><li>Pulsa <span class="boton">Cambiar empleado</span>.</li><li>Escribe tu código de empleado con el teclado de la pantalla y pulsa <span class="boton">CAMBIAR</span>.</li><li>Arriba aparecerá tu nombre y tus trabajos.</li></ol>
+<div class="nota"><strong>Nota</strong>Si al identificarte tenías una tarea a medias, el terminal puede preguntarte si quieres <b>continuar con la última tarea</b>. Pulsa <b>SÍ</b> o <b>NO</b>. Este comportamiento se configura en <a href='ref-configuracion.html#produccion'>Configuración › Producción</a>.</div>
+
+<h2 id="2-fichar-la-entrada">2. Fichar la entrada</h2>
+<p>Si tu empresa usa el control de presencia, al llegar pulsa <span class="boton">Fichar entrada</span>. Verás la hora de entrada y el tiempo que llevas.
+Mientras no fiches la entrada no podrás iniciar tareas.</p>
+
+<h2 id="3-iniciar-una-tarea">3. Iniciar una tarea</h2>
+<ol class="pasos"><li>Pulsa <span class="boton">Iniciar tarea</span>.</li><li>Indica el <b>proyecto</b>, la <b>tarea</b> y la <b>máquina</b>. Puedes teclear el código o elegirlo de la lista. Si tienes una tarea o máquina por defecto, ya aparecerá elegida.</li><li>Si estás repitiendo un trabajo que salió mal, activa <b>Reproceso</b>. Así ese tiempo se puede analizar aparte.</li><li>Si la máquina es automática (por ejemplo, la electroerosión por hilo) y la dejas trabajando sola, activa <b>Automático</b>. La máquina seguirá contando tiempo y tú quedarás libre para iniciar otra tarea.</li><li>Pulsa <span class="boton">INICIAR</span>.</li></ol>
+<div class="nota"><strong>Nota</strong>Por seguridad, la sesión se cierra sola a los pocos segundos de iniciar o finalizar una tarea, para que el siguiente compañero pueda fichar.</div>
+
+<h2 id="4-finalizar-o-reanudar">4. Finalizar o reanudar</h2>
+<p>Cada trabajo aparece como una tarjeta con el proyecto, la tarea, la máquina, la hora de inicio y el tiempo.</p>
+<ul><li><span class="boton">Finalizar</span> termina el trabajo. Si se lleva el control de producción, te pedirá las piezas producidas.</li><li><span class="boton">Reanudar</span> vuelve a empezar un trabajo manual que ya habías finalizado.</li><li><span class="boton">Incidencia</span> permite escribir un comentario sobre ese trabajo: una avería, una herramienta rota, falta de material…</li></ul>
+
+<h2 id="5-fichar-la-salida">5. Fichar la salida</h2>
+<p>Al terminar la jornada pulsa <span class="boton">Fichar salida</span>. Junto a este botón tienes otro <span class="boton">Incidencia</span> para comentarios sobre la jornada
+(por ejemplo, «Salgo una hora antes por cita médica»).</p>
+
+<h2 id="consultar-como-va-un-proyecto">Consultar cómo va un proyecto</h2>
+<p>Con <span class="boton">Situación del proyecto</span> y el código del proyecto puedes ver el avance del molde por fases. Si tu categoría tiene permiso,
+también puedes actualizarlo.</p>
+<div class="consejo"><strong>Consejo</strong>El botón <b>Mostrar máquinas</b> cambia la vista para ver los trabajos agrupados por máquina. <b>Actualizar</b> recarga la pantalla.</div>
+</article>
+</main>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

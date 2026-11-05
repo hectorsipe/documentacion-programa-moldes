@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estimar costes con detalle · Gestión de Moldes</title>
+<meta name="description" content="Cómo desglosar horas por tarea y máquina, materiales y subcontratas, usar plantillas y fijar márgenes.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="contenido">
+<article>
+<h1>Estimar costes con detalle</h1>
+<p class="entradilla">La estimación detallada desglosa el molde en tareas, máquinas, materiales y subcontratas. Es la base para dar un
+precio fiable y para comparar después lo previsto con lo real.</p>
+<figure><img src="img/estimacion.jpg" alt="Pestaña Estimación de costes y beneficios" loading="lazy"><figcaption>Pestaña Estimación de costes y beneficios</figcaption></figure>
+
+<h2 id="costes-temporales-horas-por-tarea">Costes temporales: horas por tarea</h2>
+<ol class="pasos"><li>Abre el presupuesto y entra en la pestaña <span class="campo">Estimación de costes y beneficios</span>.</li><li>En <span class="campo">Costes temporales</span> pulsa <span class="campo">Incluir plantilla</span> para cargar de golpe las tareas habituales (por ejemplo, «Mano de obra - molde nuevo»), o <span class="boton">Añadir</span> para añadirlas una a una.</li><li>En cada línea elige la <span class="campo">Maquina</span> y escribe las <span class="campo">Horas</span>. El <span class="campo">Coste/hora</span> se rellena con el de la tarea y la máquina, y puedes cambiarlo.</li><li>Revisa el <span class="campo">M. Beneficio</span> (margen de las horas) con el lápiz que hay a su lado.</li></ol>
+<div class="nota"><strong>Nota</strong>Si no quieres desglosar, marca <b>Coste global</b> e indica solo las horas totales y el coste por hora.</div>
+
+<h2 id="materiales-y-subcontratas">Materiales y subcontratas</h2>
+<ol class="pasos"><li>En <span class="campo">Costes Materiales / Subcontratas</span> pulsa <span class="campo">Incluir todas las familias</span> o <span class="boton">Añadir</span>.</li><li>En cada línea indica la familia o material, la <span class="campo">Cantidad</span> y el <span class="campo">Coste/ud.</span>. Por ejemplo: acero 1.2738, 620 kg a 5,40 €/kg.</li><li>Revisa el <span class="campo">M. Beneficio</span> de materiales.</li></ol>
+
+<h2 id="resultado-y-guardado">Resultado y guardado</h2>
+<p>Arriba se ven el <span class="campo">Coste Total Estimado</span>, el <span class="campo">Importe Presupuestado</span>, el <span class="campo">Importe Recomendado</span>, el total de horas y el
+<span class="campo">Beneficio</span>. Cuando esté a tu gusto pulsa <span class="boton">Guardar estimación</span>.</p>
+<ul><li><span class="boton">Borrar seleccionados</span> y <span class="boton">Borrar todas</span> eliminan líneas.</li><li><span class="boton">Eliminar estimación</span> borra la estimación completa.</li><li><span class="boton">Exportar listas</span> saca la estimación a PDF o Excel.</li></ul>
+<div class="consejo"><strong>Consejo</strong>Crea plantillas con los trabajos típicos de tu taller (molde nuevo, reparación, molde con cámara caliente…) en <a href='ref-configuracion.html#plantillas-de-estimacion'>Configuración › Plantillas de estimación</a>. Ahorran tiempo y hacen los presupuestos más homogéneos.</div>
+
+<h2 id="como-se-calcula-el-coste-por-hora">Cómo se calcula el coste por hora</h2>
+<p>Cada tarea tiene un coste por hora de operario y cada máquina su coste por hora y su <b>tipo de cálculo</b>:</p>
+<div class="tabla-scroll"><table><thead><tr><th>Tipo de cálculo</th><th>Coste por hora de la línea</th></tr></thead><tbody><tr><td>Combinado</td><td>Operario + máquina. Por ejemplo, mecanizado 5 ejes: 28 €/h + 55 €/h = 83 €/h.</td></tr><tr><td>Solo máquina</td><td>Solo el coste de la máquina.</td></tr><tr><td>Solo operario</td><td>Solo el coste del operario. Por ejemplo, banco de ajuste.</td></tr></tbody></table></div>
+<div class="ver-tambien"><b>Ver también</b><ul><li><a href="guia-presupuesto-crear.html">Crear un presupuesto</a></li><li><a href="guia-proyecto-costes.html">Controlar costes y beneficio del proyecto</a></li><li><a href="guia-puesta-en-marcha.html">Configurar tareas, máquinas y materiales</a></li></ul></div>
+</article>
+</main>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emitir un albarán al cliente · Gestión de Moldes</title>
+<meta name="description" content="Cómo generar un albarán desde un proyecto, valorarlo, firmarlo, enviarlo por correo y exportarlo a Classic Ges.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="contenido">
+<article>
+<h1>Emitir un albarán al cliente</h1>
+<p class="entradilla">Los albaranes de proyecto son los que entregas al cliente: con el molde, con las muestras o como hitos de facturación
+(por ejemplo, 40 % pedido, 30 % muestras T1 y 30 % aprobación).</p>
+
+<h2 id="1-generar-el-albaran">1. Generar el albarán</h2>
+<figure><img src="img/generar-albaran.jpg" alt="Elegir el proyecto para el albarán" loading="lazy"><figcaption>Elegir el proyecto para el albarán</figcaption></figure>
+<ol class="pasos"><li>Entra en <b>Alb. de proyecto</b> y pulsa <span class="boton">Añadir</span>, o desde el proyecto, pestaña <span class="campo">Albaranes Cli.</span>, pulsa <span class="boton">Nuevo albarán</span>.</li><li>Elige el proyecto con el icono de la mano.</li><li>Decide si el albarán va <b>Sin valorar</b> (solo descripción, como albarán de entrega) o <b>Valorar</b>.</li></ol>
+<figure><img src="img/valorar-albaran.jpg" alt="Opciones para valorar el albarán" loading="lazy"><figcaption>Opciones para valorar el albarán</figcaption></figure>
+<p>Si lo valoras, elige sobre qué se calcula la base imponible:</p>
+<div class="tabla-scroll"><table><thead><tr><th>Opción</th><th>Base imponible</th></tr></thead><tbody><tr><td>Calcular sobre Costes</td><td>El coste acumulado del proyecto.</td></tr><tr><td>PVP Recomendado</td><td>El precio recomendado con los costes reales y los márgenes.</td></tr><tr><td>Sobre Precio Presupuestado</td><td>El precio acordado con el cliente.</td></tr><tr><td>Otro…</td><td>Un importe que escribes tú.</td></tr><tr><td>Decidir más tarde…</td><td>Se crea el albarán y lo valoras después.</td></tr></tbody></table></div>
+<p>Con <span class="campo">% a percibir</span> facturas solo una parte: por ejemplo, un 40 % del importe a la aceptación del pedido. Pulsa
+<span class="boton">Generar albarán</span>.</p>
+
+<h2 id="2-revisar-el-albaran">2. Revisar el albarán</h2>
+<figure><img src="img/albaran.jpg" alt="Albarán de proyecto" loading="lazy"><figcaption>Albarán de proyecto</figcaption></figure>
+<ul><li>En <span class="campo">Información del Albarán</span> se ven la referencia, el ejercicio, la serie, la fecha, la base imponible, el IVA y el importe.</li><li>En <span class="campo">Líneas del Albarán</span> puedes cambiar la descripción, la cantidad, el IVA y el precio, o pulsar <span class="boton">Añadir línea</span>. Cada línea lleva su servicio.</li><li><span class="campo">Líneas libres</span> sirve para texto adicional que debe aparecer en el albarán.</li><li>Pulsa <span class="boton">Guardar</span>.</li></ul>
+
+<h2 id="3-firmar-imprimir-y-enviar">3. Firmar, imprimir y enviar</h2>
+<ul><li><span class="boton">Firmar</span>: el cliente firma con el dedo en la tablet cuando recoge el molde. La firma queda guardada en el albarán.</li><li><span class="boton">Imprimir</span>: descarga el PDF con el diseño de tu empresa.</li><li><span class="boton">Enviar</span>: abre una ventana con el <span class="campo">Destinatario</span>, el <span class="campo">Asunto</span> y el <span class="campo">Cuerpo del mensaje</span>, con vista previa del PDF adjunto. El correo sale desde la cuenta configurada en <a href='ref-configuracion.html#email'>Configuración › Email</a>.</li></ul>
+
+<h2 id="4-pasarlo-a-classic-ges">4. Pasarlo a Classic Ges</h2>
+<p>Mientras no se exporta, el albarán es un <b>borrador</b>. Para facturarlo en tu programa de facturación:</p>
+<ol class="pasos"><li>Pulsa <span class="boton">Exportar a...</span> en el albarán y elige Classic Ges. También puedes seleccionar varios albaranes en el listado con su casilla y pulsar <span class="boton">Exportar a...</span>.</li><li>El albarán pasa a <b>Finalizado y exportado</b> y recibe su número de Classic Ges.</li><li>Cuando tengas la factura, escribe su número en <span class="campo">Número factura</span>. En el listado verás qué albaranes están facturados.</li></ol>
+<div class="nota"><strong>Nota</strong>El conector funciona con Classic Ges 6.0 y en breve estará disponible para Classic Ges 7.0. Se configura en <a href='ref-configuracion.html#conector'>Configuración › Conector</a>.</div>
+</article>
+</main>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

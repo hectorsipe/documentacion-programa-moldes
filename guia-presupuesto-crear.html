@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crear un presupuesto · Gestión de Moldes</title>
+<meta name="description" content="Paso a paso para dar de alta un presupuesto, calcular el precio y cambiar su estado.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="contenido">
+<article>
+<h1>Crear un presupuesto</h1>
+<p class="entradilla">Un presupuesto recoge qué se va a hacer para el cliente, cuánto costará y a qué precio se ofrece.
+Puedes hacer un cálculo rápido o una <a href="guia-presupuesto-estimar.html">estimación detallada</a>.</p>
+
+<h2 id="dar-de-alta-el-presupuesto">Dar de alta el presupuesto</h2>
+<ol class="pasos"><li>Entra en <b>Presupuestos</b> y pulsa <span class="boton">Añadir</span>.</li><li>En <span class="campo">Nombre y referencia</span> escribe el nombre (por ejemplo, «Molde tapa caja de registro») y elige el <span class="campo">Servicio</span>: molde, reparación, modificación, mecanizado…</li><li>En <span class="campo">Datos del cliente</span> pulsa la lupa y elige el cliente. La <span class="campo">Referencia presupuesto</span> se completa sola al elegirlo.</li><li>Indica la <span class="campo">Fecha Emisión</span>. Si quieres, rellena la <span class="campo">Descripción</span>, la <span class="campo">Complejidad Molde</span>, el <span class="campo">Sector</span> y las <span class="campo">Observaciones</span>.</li><li>Pulsa <span class="boton">Guardar</span>. El <span class="campo">Código</span> se asigna en este primer guardado.</li></ol>
+
+<h2 id="calculo-rapido-del-precio">Cálculo rápido del precio</h2>
+<figure><img src="img/presupuesto-costes.jpg" alt="Bloque Costes y Beneficios de la pestaña General" loading="lazy"><figcaption>Bloque Costes y Beneficios de la pestaña General</figcaption></figure>
+<p>En el bloque <span class="campo">Costes y Beneficios</span> de la pestaña General puedes hacer un cálculo sin desglose:</p>
+<ol class="pasos"><li>Escribe el coste de materiales y subcontratas (<span class="campo">C. Mat. / Sub.</span>) y su % de beneficio.</li><li>Escribe el coste de horas (<span class="campo">C. Temporales</span>) y su % de beneficio.</li><li>La aplicación suma el <span class="campo">C. total estimado</span> y propone un <span class="campo">Importe recomendado</span>.</li><li>Escribe el <span class="campo">Importe presupuestado</span>, el precio que ofreces al cliente. Verás el beneficio en euros y en porcentaje.</li></ol>
+<div class="nota"><strong>Cómo se calcula el margen</strong>El margen se calcula sobre el precio de venta: con un 25 % de beneficio, un coste de 7.500 € da un precio de 10.000 €. Los márgenes por defecto de cada servicio se configuran en <a href='ref-configuracion.html#albaranes'>Configuración › Albaranes › Servicios</a>.</div>
+<div class="consejo"><strong>Consejo</strong>Si haces una estimación detallada, estos importes se rellenan solos desde la pestaña <a href='guia-presupuesto-estimar.html'>Estimación de costes y beneficios</a>.</div>
+
+<h2 id="cambiar-el-estado">Cambiar el estado</h2>
+<p>En <span class="campo">Estado del presupuesto</span> cambia el estado según avance la oferta. Cada cambio queda registrado con su fecha y, si quieres, un
+motivo. El icono del reloj muestra el historial.</p>
+<div class="tabla-scroll"><table><thead><tr><th>Estado</th><th>Cuándo usarlo</th></tr></thead><tbody><tr><td>Borrador</td><td>Mientras lo preparas.</td></tr><tr><td>Enviado</td><td>Cuando se lo has mandado al cliente.</td></tr><tr><td>Aprobado</td><td>El cliente lo acepta. A partir de aquí puedes <a href='guia-presupuesto-aprobar.html'>generar el proyecto</a>.</td></tr><tr><td>Rechazado</td><td>El cliente no lo acepta. Indica el motivo para analizarlo después.</td></tr><tr><td>Cancelado</td><td>El trabajo ya no se va a hacer.</td></tr></tbody></table></div>
+
+<h2 id="adjuntar-documentos-e-imprimir">Adjuntar documentos e imprimir</h2>
+<ul><li>En la pestaña <span class="campo">Adjuntos</span> pulsa <span class="boton">Añadir</span> para guardar planos, ficheros 3D, fotos o correos del cliente.</li><li>El PDF que se envía al cliente se imprime desde la <a href='guia-presupuesto-ficha.html'>Ficha técnica</a> con <span class="boton">Imprimir</span> o <span class="boton">Imprimir Sin Valorar</span>.</li></ul>
+<div class="ver-tambien"><b>Ver también</b><ul><li><a href="guia-presupuesto-estimar.html">Estimar costes con detalle</a></li><li><a href="guia-presupuesto-versiones.html">Versiones y duplicados</a></li><li><a href="ref-presupuestos.html">Pantalla de Presupuestos</a></li></ul></div>
+</article>
+</main>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

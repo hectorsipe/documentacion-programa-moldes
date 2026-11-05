@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seguir un proyecto · Gestión de Moldes</title>
+<meta name="description" content="Estados del proyecto, fechas de entrega, documentos, materiales y entregas a subcontratistas.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="contenido">
+<article>
+<h1>Seguir un proyecto</h1>
+<p class="entradilla">El proyecto reúne todo lo que pasa con un molde: horas del taller, compras, entregas, documentos y facturación.
+Esta guía explica el día a día.</p>
+<figure><img src="img/proyecto-general.jpg" alt="Ficha de proyecto, pestaña General" loading="lazy"><figcaption>Ficha de proyecto, pestaña General</figcaption></figure>
+
+<h2 id="cambiar-el-estado">Cambiar el estado</h2>
+<p>En <span class="campo">Estado del proyecto</span> elige el estado. Cada cambio queda en el historial (icono del reloj).</p>
+<div class="tabla-scroll"><table><thead><tr><th>Estado</th><th>Significado</th></tr></thead><tbody><tr><td>Pendiente</td><td>Aprobado pero aún sin empezar.</td></tr><tr><td>En curso</td><td>En fabricación. El taller puede fichar en él.</td></tr><tr><td>Entregado</td><td>Entregado al cliente, pendiente de su aprobación final.</td></tr><tr><td>Finalizado</td><td>Cerrado. Ver <a href='guia-proyecto-cerrar.html'>Facturar y cerrar un proyecto</a>.</td></tr><tr><td>Garantía</td><td>En periodo de garantía tras la entrega.</td></tr></tbody></table></div>
+<div class="nota"><strong>Nota</strong>En proyectos finalizados o en garantía ya no se pueden añadir fichajes, para no alterar los costes cerrados. Los trabajos posteriores se hacen en un proyecto asociado.</div>
+
+<h2 id="fecha-de-entrega-prevista">Fecha de entrega prevista</h2>
+<p>Cambia la <span class="campo">Fecha de entrega prevista</span> cuando se acuerde una nueva fecha con el cliente. La aplicación guarda cada cambio con su
+motivo (icono del reloj junto a la fecha), de forma que siempre sabes por qué se movió la entrega.</p>
+
+<h2 id="proyecto-asociado">Proyecto asociado</h2>
+<p>Una reparación, un mantenimiento o una modificación de un molde que ya hiciste se dan de alta como proyecto nuevo y se enlazan con el
+original en <span class="campo">Proyecto asociado</span>. Así, sus costes aparecen como extras del molde original y puedes saber cuánto te ha costado cada
+molde a lo largo de su vida.</p>
+
+<h2 id="pestanas-de-la-ficha">Pestañas de la ficha</h2>
+<div class="tabla-scroll"><table><thead><tr><th>Pestaña</th><th>Qué hacer en ella</th></tr></thead><tbody><tr><td>Resumen Costes</td><td>Ver lo estimado frente a lo real y el beneficio. Ver <a href='guia-proyecto-costes.html'>Controlar costes</a>.</td></tr><tr><td>Albaranes Prov.</td><td>Consultar los albaranes de proveedor imputados al proyecto.</td></tr><tr><td>Albaranes Cli.</td><td>Consultar los albaranes emitidos y crear uno nuevo con <b>Nuevo albarán</b>.</td></tr><tr><td>Doc. Entregas</td><td>Registrar envíos y recepciones de piezas a subcontratistas (ver abajo).</td></tr><tr><td>Adjuntos</td><td>Guardar planos, fotos y documentos. La primera imagen se usa como miniatura en el listado.</td></tr><tr><td>Trabajos</td><td>Horas estimadas frente a horas reales por tarea y porcentaje realizado.</td></tr><tr><td>Máquinas</td><td>Horas estimadas frente a horas reales por máquina.</td></tr><tr><td>Materiales / Subcontratas</td><td>Lista de materiales del proyecto: cantidades, precio, proveedor, pedido y cantidad recibida.</td></tr><tr><td>Producción</td><td>Todos los fichajes del proyecto. Se pueden añadir o corregir.</td></tr><tr><td>Incidencias</td><td>Incidencias comunicadas desde el taller en este proyecto.</td></tr></tbody></table></div>
+<figure><img src="img/proyecto-trabajos.jpg" alt="Pestaña Trabajos: horas estimadas frente a horas reales" loading="lazy"><figcaption>Pestaña Trabajos: horas estimadas frente a horas reales</figcaption></figure>
+
+<h2 id="lista-de-materiales">Lista de materiales</h2>
+<p>En <span class="campo">Materiales / Subcontratas</span> puedes llevar la lista de materiales del molde con su proveedor, si está pedido y cuánto se ha
+recibido. Si tienes la lista en Excel, pulsa <span class="boton">Importar</span> y elige el archivo: se leen el nombre del material (columna B) y su familia
+(columna D), y se crean los materiales que no existan.</p>
+
+<h2 id="entregas-a-subcontratistas">Entregas a subcontratistas</h2>
+<p>Para saber en todo momento qué piezas están fuera del taller (temple, nitrurado, texturizado, pulido…):</p>
+<ol class="pasos"><li>En la pestaña <span class="campo">Doc. Entregas</span> pulsa <span class="boton">Añadir</span>.</li><li>Elige el <span class="campo">Tipo de Entrega</span>: <b>Entrega</b> cuando sale del taller, <b>Recepción</b> cuando vuelve.</li><li>Indica la <span class="campo">Fecha</span>, el proveedor y unas <span class="campo">Observaciones</span> («Se envían postizos para temple a 52-54 HRC»). Si tienes el albarán de envío, adjúntalo.</li><li>Pulsa <span class="boton">Añadir</span>.</li></ol>
+<div class="ver-tambien"><b>Ver también</b><ul><li><a href="guia-proyecto-situacion.html">Informar al cliente de la situación</a></li><li><a href="ref-proyectos.html">Pantalla de Proyectos</a></li></ul></div>
+</article>
+</main>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

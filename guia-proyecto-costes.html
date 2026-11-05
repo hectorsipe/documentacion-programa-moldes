@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Controlar costes y beneficio · Gestión de Moldes</title>
+<meta name="description" content="Cómo leer el resumen de costes del proyecto, añadir ajustes y entender el beneficio.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="contenido">
+<article>
+<h1>Controlar costes y beneficio</h1>
+<p class="entradilla">El resumen de costes compara en todo momento lo que estimaste con lo que llevas gastado: horas del taller (fichajes)
+y compras (albaranes de proveedor).</p>
+<figure><img src="img/proyecto-costes.jpg" alt="Pestaña Resumen Costes de un proyecto en curso" loading="lazy"><figcaption>Pestaña Resumen Costes de un proyecto en curso</figcaption></figure>
+
+<h2 id="como-leer-el-resumen">Cómo leer el resumen</h2>
+<div class="tabla-scroll"><table><thead><tr><th>Bloque</th><th>Qué muestra</th></tr></thead><tbody><tr><td>Costes Temporales</td><td>Por tarea: horas y coste estimados frente a horas y coste reales. El icono de información indica horas de reproceso.</td></tr><tr><td>Ajustes</td><td>Costes que no pasan por fichaje ni por albarán (desplazamientos, pruebas en casa del cliente…).</td></tr><tr><td>Costes Materiales / Subcontratas</td><td>Por familia: coste estimado frente a lo comprado según los albaranes imputados.</td></tr><tr><td>Importe presupuestado</td><td>Precio acordado con el cliente.</td></tr><tr><td>P.V.P. recomendado</td><td>Precio que correspondería con los costes reales y los márgenes del proyecto.</td></tr><tr><td>Coste esperado y M. beneficio esperado</td><td>Coste y margen según la estimación del presupuesto.</td></tr><tr><td>Coste acumulado</td><td>Fichajes más albaranes de proveedor hasta hoy.</td></tr><tr><td>Coste extras</td><td>Costes de proyectos asociados (reparaciones o modificaciones posteriores).</td></tr><tr><td>Beneficio</td><td>Importe presupuestado menos coste acumulado, en euros y en porcentaje. En verde si es positivo y en rojo si es negativo.</td></tr></tbody></table></div>
+
+<h2 id="anadir-un-ajuste">Añadir un ajuste</h2>
+<ol class="pasos"><li>En el bloque <span class="campo">Ajustes</span> pulsa <span class="boton">Nuevo Ajuste</span>.</li><li>Escribe el <span class="campo">Concepto</span>, las <span class="campo">Horas</span> y el <span class="campo">Coste/hora</span>. Por ejemplo: «Reunión técnica en casa del cliente», 3 h a 40 €.</li><li>Guarda. El coste se suma al acumulado del proyecto.</li></ol>
+
+<h2 id="margenes-del-proyecto">Márgenes del proyecto</h2>
+<p><span class="campo">M. Beneficio Materiales</span> y <span class="campo">M. Beneficio Trabajos</span> son los márgenes con los que se calcula el P.V.P. recomendado. Puedes
+cambiarlos para este proyecto o volver a los del servicio con <b>Restablecer Margen de beneficio según tipo de servicio</b>.</p>
+
+<h2 id="recalcular-y-generar-el-resumen">Recalcular y generar el resumen</h2>
+<ul><li><span class="boton">Recalcular costes</span> vuelve a calcular el coste de los fichajes con los costes por hora actuales de empleados y máquinas. Úsalo solo si has corregido algún coste por hora y quieres aplicarlo a fichajes ya hechos: pide confirmación y no se puede deshacer.</li><li><span class="boton">Generar resumen</span> abre el resumen de costes completo, el mismo que se muestra al finalizar el proyecto.</li></ul>
+
+<h2 id="de-donde-sale-cada-coste">De dónde sale cada coste</h2>
+<ul><li><b>Horas</b>: cada fichaje guarda su coste por hora en el momento en que se hizo (operario, máquina o ambos según el tipo de cálculo de la máquina). Los trabajos automáticos de una máquina solo cuentan el coste de la máquina.</li><li><b>Materiales</b>: las líneas de albaranes de proveedor imputadas a este proyecto.</li><li><b>Ajustes</b>: los que añadas a mano.</li></ul>
+<div class="consejo"><strong>Consejo</strong>En el listado de Proyectos, activa <b>Mostrar costes</b> para ver el beneficio de todos los proyectos a la vez. Los que se están desviando se ven enseguida.</div>
+<div class="ver-tambien"><b>Ver también</b><ul><li><a href="guia-produccion-revisar.html">Revisar y corregir fichajes</a></li><li><a href="guia-compras-albaran.html">Registrar un albarán de proveedor</a></li></ul></div>
+</article>
+</main>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

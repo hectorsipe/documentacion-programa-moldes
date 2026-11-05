@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informar al cliente de la situación · Gestión de Moldes</title>
+<meta name="description" content="Cómo actualizar la situación del proyecto por fases y enviar el informe en PDF al cliente.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="contenido">
+<article>
+<h1>Informar al cliente de la situación</h1>
+<p class="entradilla">El informe de situación responde a la pregunta que más hace un cliente: «¿cómo va mi molde?». Muestra el avance por
+fases y materiales y la fecha de entrega acordada.</p>
+<figure><img src="img/situacion.jpg" alt="Ventana Situación del proyecto" loading="lazy"><figcaption>Ventana Situación del proyecto</figcaption></figure>
+
+<h2 id="actualizar-la-situacion">Actualizar la situación</h2>
+<ol class="pasos"><li>Abre el proyecto y, en la pestaña General, pulsa <span class="boton">Informe de Situación</span>.</li><li>En la pestaña <span class="campo">Fases</span> verás cada fase con las horas reales frente a las estimadas y su porcentaje. Ajusta el avance de cada fase con el deslizador o desplegando sus tareas; marca la casilla de las fases terminadas.</li><li>En <span class="campo">Materiales</span> revisa qué materiales están recibidos.</li><li>A la derecha, elige la <span class="campo">Situación del proyecto</span> (<b>En tiempo</b>, <b>Adelantado</b> o <b>Retraso</b>) y escribe la <span class="campo">Descripción de la situación</span>, que es el texto que leerá el cliente.</li><li>Revisa la <span class="campo">Fecha de la revisión</span> y la <span class="campo">Fecha de entrega acordada</span>. La aplicación calcula los días que faltan.</li><li>Pulsa <span class="boton">Guardar y descargar</span> para obtener el PDF, o <span class="boton">Guardar</span> si solo quieres registrar la situación.</li></ol>
+<div class="nota"><strong>Nota</strong>Las horas en rojo indican que la fase ya ha superado lo estimado. Marca <b>Ignorar fases sin tareas estimadas</b> para que no aparezcan fases que no aplican a este trabajo.</div>
+<div class="consejo"><strong>Consejo</strong>Al elegir la situación se propone un texto estándar para cada caso. Modifícalo para dar al cliente detalles concretos.</div>
+
+<h2 id="desde-el-taller">Desde el taller</h2>
+<p>Los empleados con permiso pueden consultar o actualizar la situación desde el terminal de fichaje, con el botón
+<span class="boton">Situación del proyecto</span>. Los permisos se dan por categoría en <a href="ref-configuracion.html#empleados">Configuración › Empleados</a>.</p>
+<div class="nota"><strong>Nota</strong>Si pulsas <b>Revertir cambios</b> vuelves a la última situación guardada.</div>
+</article>
+</main>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

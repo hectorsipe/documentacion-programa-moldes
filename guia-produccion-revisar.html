@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revisar y corregir fichajes · Gestión de Moldes</title>
+<meta name="description" content="Cómo consultar los fichajes del taller, corregirlos, añadir los que falten y sacar el informe diario.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="contenido">
+<article>
+<h1>Revisar y corregir fichajes</h1>
+<p class="entradilla">Desde la oficina, la pantalla <b>Producción</b> muestra todo lo que se ha fichado. Es donde se corrigen los olvidos
+y se saca el informe diario.</p>
+<figure><img src="img/produccion.jpg" alt="Producción, pestaña Tarea" loading="lazy"><figcaption>Producción, pestaña Tarea</figcaption></figure>
+
+<h2 id="consultar-los-fichajes">Consultar los fichajes</h2>
+<ol class="pasos"><li>Entra en <b>Producción</b>. Por defecto verás los fichajes de hoy.</li><li>Cambia las fechas <span class="campo">Desde</span> y <span class="campo">Hasta</span> para ver otro periodo, y usa <span class="campo">Buscar</span> para filtrar por empleado, proyecto, tarea o máquina.</li><li>Marca <span class="campo">Agrupar por empleado</span> para ver el total de horas de cada operario.</li></ol>
+<p>Los trabajos sin <span class="campo">Fecha Fin</span> están todavía en marcha. La columna <span class="campo">Coste/Hora</span> muestra el coste aplicado; el icono de
+información explica cómo se ha calculado (operario, máquina o ambos). El triángulo en <span class="campo">Incidencias</span> indica que hay un comentario
+del taller.</p>
+<div class="nota"><strong>Nota</strong>La pantalla se actualiza sola cada 30 segundos.</div>
+
+<h2 id="corregir-un-fichaje">Corregir un fichaje</h2>
+<ol class="pasos"><li>Pulsa el lápiz del fichaje.</li><li>Corrige el proyecto, el empleado, la tarea, la máquina o las horas de inicio y fin.</li><li>Si necesitas un coste distinto para ese fichaje, marca <span class="campo">Permitir cambio de coste/hora</span> y ajusta los costes de empleado y máquina.</li><li>Pulsa <span class="boton">GUARDAR</span>.</li></ol>
+<div class="consejo"><strong>Consejo</strong>Caso típico: un operario se olvidó de finalizar una tarea el viernes. Edita el fichaje y pon la hora real de fin para que no acumule horas de más.</div>
+
+<h2 id="anadir-un-fichaje-que-falta">Añadir un fichaje que falta</h2>
+<p>Pulsa <span class="boton">Añadir</span> y completa <span class="campo">Ref. Proyecto</span>, <span class="campo">Código Empleado</span>, <span class="campo">Tipo Fichaje</span>, <span class="campo">Código Tarea</span>,
+<span class="campo">Código Máquina</span> y las fechas. Pulsa <span class="boton">AÑADIR</span>.</p>
+
+<h2 id="presencia-e-incidencias">Presencia e incidencias</h2>
+<figure><img src="img/presencia.jpg" alt="Producción, pestaña Presencia" loading="lazy"><figcaption>Producción, pestaña Presencia</figcaption></figure>
+<ul><li><span class="campo">Presencia</span>: entradas y salidas de cada empleado. Se pueden corregir o añadir igual que los fichajes de tareas.</li><li><span class="campo">Incidencias</span>: todos los comentarios del taller, con el proyecto, la tarea y la máquina.</li></ul>
+
+<h2 id="informe-diario">Informe diario</h2>
+<p>En la pestaña <span class="campo">Tarea</span>, elige el periodo y pulsa <span class="boton">Generar Informe</span>. Se descarga un PDF con los fichajes de cada empleado,
+útil para revisar la jornada o para nóminas.</p>
+</article>
+</main>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

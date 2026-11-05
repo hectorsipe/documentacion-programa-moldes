@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pantalla de Presupuestos · Gestión de Moldes</title>
+<meta name="description" content="Referencia del listado y la ficha de presupuestos: campos, pestañas, estados y botones.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="contenido">
+<article>
+<h1>Pantalla de Presupuestos</h1>
+<h2 id="listado">Listado</h2>
+<figure><img src="img/presupuestos.jpg" alt="Listado de Presupuestos" loading="lazy"><figcaption>Listado de Presupuestos</figcaption></figure>
+<div class="tabla-scroll"><table><thead><tr><th>Elemento</th><th>Descripción</th></tr></thead><tbody><tr><td>Añadir / Exportar</td><td>Crea un presupuesto / exporta el listado a PDF o Excel.</td></tr><tr><td>Filtros</td><td>Estado, Servicio, Desde, Hasta, Cliente y Buscar.</td></tr><tr><td>Ref presupuesto</td><td>Referencia automática: año, código de cliente y número correlativo (por ejemplo, 126-7-1).</td></tr><tr><td>nº de Versión</td><td>Versión del presupuesto. Las versiones de una misma oferta comparten referencia.</td></tr><tr><td>Estado</td><td>Se puede cambiar desde el propio listado. El color de la fila indica el estado: amarillo borrador, naranja enviado, verde aprobado, rojo rechazado.</td></tr></tbody></table></div>
+<h2 id="ficha-del-presupuesto">Ficha del presupuesto</h2>
+<div class="tabla-scroll"><table><thead><tr><th>Pestaña</th><th>Contenido</th></tr></thead><tbody><tr><td>General</td><td>Nombre, servicio, referencia, código, cliente, estado y fechas, bloque de costes y beneficios, proyecto generado, descripción, complejidad, sector y observaciones. Botones <b>Duplicar Presupuesto</b> y <b>Generar proyecto</b>.</td></tr><tr><td>Estimación de costes y beneficios</td><td>Desglose de costes temporales (tareas, máquinas, horas, coste/hora) y de materiales y subcontratas, con márgenes, plantillas y exportación.</td></tr><tr><td>Ficha Técnica</td><td>Documento técnico para el cliente según la plantilla (proyecto, reforma, parcial). Imprimir valorado o sin valorar.</td></tr><tr><td>Versiones</td><td>Historial de versiones con motivo e importe. Botón <b>Nueva versión</b>.</td></tr><tr><td>Adjuntos</td><td>Documentos del presupuesto.</td></tr></tbody></table></div>
+<h3 id="campos-de-costes-y-beneficios">Campos de costes y beneficios</h3>
+<div class="tabla-scroll"><table><thead><tr><th>Campo</th><th>Significado</th></tr></thead><tbody><tr><td>C. Mat. / Sub.</td><td>Coste de materiales y subcontratas.</td></tr><tr><td>C. Temporales</td><td>Coste de horas de operarios y máquinas.</td></tr><tr><td>% beneficio</td><td>Margen sobre el precio de venta.</td></tr><tr><td>Importe recomendado</td><td>Precio que da el margen indicado sobre los costes.</td></tr><tr><td>Importe presupuestado</td><td>Precio ofrecido al cliente.</td></tr><tr><td>Beneficio</td><td>Importe presupuestado menos costes totales, en euros y porcentaje.</td></tr></tbody></table></div>
+<div class="ver-tambien"><b>Ver también</b><ul><li><a href="guia-presupuesto-crear.html">Crear un presupuesto</a></li><li><a href="guia-presupuesto-estimar.html">Estimar costes con detalle</a></li></ul></div>
+</article>
+</main>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

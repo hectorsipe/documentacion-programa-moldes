@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preguntas frecuentes · Gestión de Moldes</title>
+<meta name="description" content="Respuestas a las dudas más habituales sobre el uso de Gestión de Moldes.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="contenido">
+<article>
+<h1>Preguntas frecuentes</h1>
+<h2 id="presupuestos">Presupuestos</h2>
+<details><summary>¿Por qué no puedo modificar un presupuesto?</summary><p>Porque ya está aprobado y tiene un proyecto generado. Los cambios se hacen en el proyecto. Si el presupuesto aún no tiene proyecto, comprueba que estás en la última versión.</p></details>
+<details><summary>¿Cómo hago una nueva oferta con cambios sin perder la anterior?</summary><p>Crea una <a href='guia-presupuesto-versiones.html'>nueva versión</a> desde la pestaña Versiones.</p></details>
+<details><summary>¿Por qué el importe recomendado es mayor que coste + porcentaje?</summary><p>Porque el margen se calcula sobre el precio de venta, no sobre el coste. Con un 25 % de margen, 7.500 € de coste dan 10.000 € de precio (y no 9.375 €).</p></details>
+<details><summary>¿Puedo enviar al cliente la ficha sin precios?</summary><p>Sí, con <b>Imprimir Sin Valorar</b> en la pestaña Ficha Técnica.</p></details>
+<h2 id="proyectos-y-costes">Proyectos y costes</h2>
+<details><summary>¿De dónde sale el coste de un proyecto?</summary><p>De los fichajes del taller, de las líneas de albaranes de proveedor imputadas al proyecto y de los ajustes que añadas. Ver <a href='guia-proyecto-costes.html'>Controlar costes y beneficio</a>.</p></details>
+<details><summary>He cambiado el coste por hora de una máquina y los proyectos no cambian</summary><p>Es lo esperado: cada fichaje guarda el coste del momento en que se hizo. Si quieres aplicar el nuevo coste a un proyecto, usa <b>Recalcular costes</b> en su resumen de costes (no se puede deshacer).</p></details>
+<details><summary>El taller no puede fichar en un proyecto</summary><p>Comprueba el estado: en proyectos finalizados o en garantía no se admiten fichajes. Para trabajos posteriores, crea un proyecto asociado.</p></details>
+<details><summary>¿Cómo registro una reparación de un molde que ya hicimos?</summary><p>Crea un proyecto nuevo con el servicio Reparación y enlázalo con el original en <b>Proyecto asociado</b>. Sus costes aparecerán como extras del molde original.</p></details>
+<details><summary>¿Qué significa que las horas de una fase salgan en rojo en la situación del proyecto?</summary><p>Que esa fase ya ha consumido más horas de las estimadas.</p></details>
+<h2 id="taller">Taller</h2>
+<details><summary>Un operario olvidó finalizar una tarea</summary><p>En <b>Producción</b>, busca el fichaje, pulsa el lápiz y pon la hora real de fin. Ver <a href='guia-produccion-revisar.html'>Revisar y corregir fichajes</a>.</p></details>
+<details><summary>No me deja iniciar una tarea en el terminal</summary><p>Si se usa el control de presencia, primero hay que pulsar <b>Fichar entrada</b>. Comprueba también que el proyecto esté en curso.</p></details>
+<details><summary>¿Qué es un fichaje automático?</summary><p>El tiempo de una máquina automática que trabaja sola, por ejemplo una electroerosión durante la noche. Solo cuenta el coste de la máquina y deja al operario libre para otra tarea.</p></details>
+<details><summary>¿Qué es un reproceso?</summary><p>Tiempo dedicado a repetir un trabajo que salió mal. Se marca al iniciar la tarea y en el resumen de costes se ve aparte, para poder analizarlo.</p></details>
+<h2 id="albaranes">Albaranes</h2>
+<details><summary>¿Cómo facturo un molde por hitos (40 %, 30 %, 30 %)?</summary><p>Genera un albarán valorado por cada hito y usa <b>% a percibir</b>. Ver <a href='guia-venta-albaran.html'>Emitir un albarán al cliente</a>.</p></details>
+<details><summary>¿Por qué el albarán dice que es un borrador?</summary><p>Porque aún no se ha exportado a Classic Ges. Pulsa <b>Exportar a...</b> para pasarlo.</p></details>
+<details><summary>No aparece ningún albarán en el listado de Albaranes de proyecto</summary><p>Revisa el <b>Ejercicio</b> y la <b>Serie</b> elegidos arriba: el listado muestra solo los de ese ejercicio y serie.</p></details>
+<details><summary>No veo los albaranes de proveedor antiguos</summary><p>Por defecto se muestra el último mes. Cambia las fechas o marca <b>Ignorar fechas</b>.</p></details>
+<details><summary>¿Puedo dar de alta un albarán desde el móvil?</summary><p>Sí, con una foto. Ver <a href='guia-compras-movil.html'>Albaranes desde el móvil</a>.</p></details>
+<h2 id="general">General</h2>
+<details><summary>¿Necesito instalar algo?</summary><p>No. Se accede desde el navegador del ordenador, la tablet o el móvil.</p></details>
+<details><summary>Al volver a un listado, ¿pierdo los filtros?</summary><p>No. Los filtros, la búsqueda, la página y la pestaña se recuerdan durante la sesión. Para quitarlos, pulsa el botón de limpiar filtros.</p></details>
+<details><summary>¿Cómo saco un listado a Excel?</summary><p>Con el botón <b>Exportar</b> del listado. Ver <a href='guia-informes.html'>Exportar listados e informes</a>.</p></details>
+<details><summary>¿Con quién contacto si tengo un problema?</summary><p>Con el soporte de SIPE Informática a través de <a href='https://sipeinformatica.com'>sipeinformatica.com</a>.</p></details>
+</article>
+</main>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

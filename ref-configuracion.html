@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pantalla de Configuración · Gestión de Moldes</title>
+<meta name="description" content="Referencia de todos los apartados de configuración de Gestión de Moldes.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="contenido">
+<article>
+<h1>Pantalla de Configuración</h1>
+<p class="entradilla">Solo los administradores acceden a Configuración. Cada apartado está en la barra superior de la pantalla.</p>
+<h2 id="general">General</h2><p>Datos de la empresa (razón social y CIF) e información de la aplicación.</p>
+<h2 id="usuarios">Usuarios</h2><p>Usuarios de acceso: nombre, email, contraseña y perfil (administrador o empleado).</p>
+<h2 id="conector">Conector</h2><p>Conexión con Classic Ges: dirección del módulo de importación y ruta de datos.</p>
+<h2 id="empleados">Empleados</h2>
+<figure><img src="img/empleados.jpg" alt="Empleados" loading="lazy"><figcaption>Empleados</figcaption></figure>
+<p><b>Categorías</b>: nombre, coste por hora y permisos (ver o modificar la situación del proyecto). <b>Empleados</b>: nombre, apellidos,
+código de fichaje, categoría, coste por hora propio (si es distinto del de su categoría) y tarea y máquina por defecto.</p>
+<h2 id="maquinas">Máquinas</h2>
+<figure><img src="img/conf-maquinas.jpg" alt="Máquinas" loading="lazy"><figcaption>Máquinas</figcaption></figure>
+<p>Código, nombre, tipo de máquina, coste por hora, si es automática y tipo de cálculo de coste (combinado, solo máquina o solo
+operario).</p>
+<h2 id="materiales-subcontratas">Materiales / Subcontratas</h2>
+<figure><img src="img/materiales.jpg" alt="Materiales / Subcontratas" loading="lazy"><figcaption>Materiales / Subcontratas</figcaption></figure>
+<p><b>Familias</b> y <b>materiales</b>: nombre, referencia, familia, coste por unidad, unidad de medida (unidades, kilos, litros), si es
+subcontrata y proveedor habitual.</p>
+<h2 id="trabajos">Trabajos</h2>
+<figure><img src="img/conf-fases.jpg" alt="Trabajos: fases y tareas" loading="lazy"><figcaption>Trabajos: fases y tareas</figcaption></figure>
+<p><b>Fases</b> del proceso y <b>tareas</b> de cada fase, con su código, máquina habitual y coste por hora del operario. Son las que se
+usan en presupuestos, fichajes y situación del proyecto.</p>
+<h2 id="presupuestos">Presupuestos</h2><p>Valores de las listas de la ficha técnica (características), validez de las ofertas y formas de pago.</p>
+<h2 id="plantillas-de-estimacion">Plantillas de estimación</h2>
+<figure><img src="img/plantillas.jpg" alt="Plantillas de estimación" loading="lazy"><figcaption>Plantillas de estimación</figcaption></figure>
+<p>Conjuntos de tareas (tipo temporal) o de materiales (tipo material) que se cargan de golpe en la estimación de un presupuesto.</p>
+<h2 id="proyectos">Proyectos</h2><p>Estado por defecto de los proyectos nuevos.</p>
+<h2 id="produccion">Producción</h2>
+<figure><img src="img/conf-produccion.jpg" alt="Opciones de producción" loading="lazy"><figcaption>Opciones de producción</figcaption></figure>
+<div class="tabla-scroll"><table><thead><tr><th>Opción</th><th>Efecto</th></tr></thead><tbody><tr><td>Reanudación de tareas</td><td>Al identificarse, preguntar si se quiere seguir con la última tarea, reanudarla sin preguntar o no hacer nada.</td></tr><tr><td>Control de presencia</td><td>Obliga a fichar la entrada antes de iniciar tareas.</td></tr><tr><td>Control de producción</td><td>Pide las piezas producidas al finalizar una tarea.</td></tr><tr><td>Cierre de sesión de empleado tras acción</td><td>Cierra la sesión del operario 5 segundos después de iniciar o finalizar una tarea.</td></tr><tr><td>Mostrar trabajos activos</td><td>Si nadie está identificado, el terminal muestra los trabajos en marcha.</td></tr><tr><td>Ocultar nombre de Cliente en Producción</td><td>No muestra el cliente en el terminal.</td></tr></tbody></table></div>
+<h2 id="informes">Informes</h2>
+<figure><img src="img/conf-informes.jpg" alt="Configuración de Informes" loading="lazy"><figcaption>Configuración de Informes</figcaption></figure>
+<p>Nombre y descripción de la empresa, dirección, colores, logo, logo secundario, marca de agua, textos de privacidad y de registro
+mercantil, y opciones de las fichas técnicas y del informe diario.</p>
+<h2 id="albaranes">Albaranes</h2><p><b>Series</b>, <b>ejercicios</b> y <b>servicios</b>. Cada servicio tiene su margen de beneficio por defecto para
+tareas y materiales y su plantilla de ficha técnica. Se pueden importar desde Classic Ges.</p>
+<h2 id="email">Email</h2><p>Cuenta de correo de salida (cuenta, servidor SMTP, puerto, contraseña) y cabecera y pie de los mensajes. Pulsa
+<b>Probar y guardar correo</b> para comprobar que funciona.</p>
+</article>
+</main>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
