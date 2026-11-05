@@ -8,6 +8,7 @@ const NAV = [
     ["index.html", "Inicio"],
     ["que-hace.html", "Qué hace el programa"],
     ["acceso.html", "Acceder y moverse por la aplicación"],
+    ["guia-puesta-en-marcha.html", "Puesta en marcha: configurar la empresa"],
     ["listados.html", "Trabajar con los listados"],
   ]},
   { seccion: "Guías: presupuestos", paginas: [
@@ -32,7 +33,6 @@ const NAV = [
   { seccion: "Guías: venta e informes", paginas: [
     ["guia-venta-albaran.html", "Emitir un albarán al cliente"],
     ["guia-informes.html", "Exportar listados e informes"],
-    ["guia-puesta-en-marcha.html", "Puesta en marcha: configurar la empresa"],
   ]},
   { seccion: "Pantallas", paginas: [
     ["ref-presupuestos.html", "Presupuestos"],
