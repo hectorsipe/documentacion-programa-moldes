@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qué hace Gestión de Moldes</title>
+<meta name="description" content="Visión general de Gestión de Moldes: cómo sigue un molde desde el presupuesto hasta la facturación y te dice cuánto cuesta y cuánto ganas.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<main class="contenido">
+<article>
+<h1>Qué hace Gestión de Moldes</h1>
+<p class="entradilla">Te dice <b>cuánto te va a costar un molde antes de hacerlo</b>, <b>cuánto te está costando mientras lo fabricas</b> y
+<b>cuánto has ganado cuando lo entregas</b>. Esta página te lo cuenta en pocos minutos; en cada apartado puedes pasar a la documentación detallada.</p>
+
+<h2 id="un-vistazo">Un vistazo</h2>
+<p>Todo gira en torno al molde (o a la reparación, o al mecanizado). La aplicación lo acompaña en tres momentos:</p>
+<div class="fases">
+ <div class="fase">
+  <small>1 · Antes de fabricar</small><b>Prever</b>
+  <p class="pregunta">«¿Cuánto cuesta este molde y a qué precio lo ofrezco?»</p>
+  <p>Estimas horas, materiales y subcontratas, y la aplicación te propone un precio con el margen que quieras.</p>
+  <ul><li><a href="#etapa-presupuesto">Presupuesto</a></li></ul>
+ </div>
+ <div class="fase">
+  <small>2 · Mientras se fabrica</small><b>Controlar</b>
+  <p class="pregunta">«¿Cómo va y cuánto llevo gastado?»</p>
+  <p>Cada hora del taller y cada compra se anotan en el proyecto del molde, sin que nadie tenga que pasar datos a mano.</p>
+  <ul><li><a href="#etapa-proyecto">Proyecto</a></li><li><a href="#etapa-taller">Taller</a></li><li><a href="#etapa-compras">Compras</a></li></ul>
+ </div>
+ <div class="fase">
+  <small>3 · Al entregar</small><b>Entregar y analizar</b>
+  <p class="pregunta">«¿Lo entrego, lo facturo y cuánto he ganado?»</p>
+  <p>Emites los albaranes, los pasas a facturación y ves el beneficio real de cada molde.</p>
+  <ul><li><a href="#etapa-entrega">Entrega</a></li><li><a href="#etapa-analisis">Análisis</a></li></ul>
+ </div>
+</div>
+
+<h2 id="el-recorrido-de-un-molde">El recorrido de un molde, paso a paso</h2>
+<p>Así avanza un trabajo dentro de la aplicación. Pulsa cualquier captura para verla más grande.</p>
+
+<ol class="etapas">
+
+<li class="etapa" id="etapa-presupuesto">
+ <div class="etapa-num">1</div>
+ <div>
+  <div class="etapa-fase">Antes de fabricar</div>
+  <h3><svg class="ico" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg>Haces el presupuesto</h3>
+  <p>Das de alta al cliente y desglosas el trabajo en <b>tareas, máquinas, materiales y subcontratas</b>. Puedes cargar plantillas con tus trabajos
+  habituales (molde nuevo, reparación…) para no empezar de cero. Con los costes y el margen que elijas, la aplicación calcula el precio recomendado.</p>
+  <p>Cuando el cliente acepta, <b>un solo botón</b> convierte el presupuesto en proyecto, sin volver a escribir nada.</p>
+  <p class="resultado"><b>Resultado:</b> un precio fiable y homogéneo, y una estimación guardada para compararla después con lo real.</p>
+  <p class="enlaces">Más detalle: <a href="guia-presupuesto-crear.html">Crear un presupuesto</a> · <a href="guia-presupuesto-estimar.html">Estimar costes</a> · <a href="guia-presupuesto-aprobar.html">Aprobar y generar el proyecto</a></p>
+ </div>
+ <figure><img src="img/estimacion.jpg" alt="Estimación de costes de un presupuesto" loading="lazy"><figcaption>Estimación de costes y beneficios</figcaption></figure>
+</li>
+
+<li class="etapa" id="etapa-proyecto">
+ <div class="etapa-num">2</div>
+ <div>
+  <div class="etapa-fase">Mientras se fabrica</div>
+  <h3><svg class="ico" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Cada molde tiene su proyecto</h3>
+  <p>El proyecto <b>reúne todo lo que pasa con el molde</b>: horas del taller, compras, entregas, planos, fotos y documentos. Tiene un estado
+  (pendiente, en curso, entregado, finalizado, garantía) y una fecha de entrega prevista cuyos cambios quedan registrados.</p>
+  <p>Y cuando el cliente pregunta «¿cómo va mi molde?», sacas un <b>informe de situación</b> en PDF con el avance por fases.</p>
+  <p class="resultado"><b>Resultado:</b> todo el trabajo de un molde está en un solo sitio y siempre sabes en qué punto está.</p>
+  <p class="enlaces">Más detalle: <a href="guia-proyecto-seguimiento.html">Seguir un proyecto</a> · <a href="guia-proyecto-situacion.html">Informar al cliente de la situación</a></p>
+ </div>
+ <figure><img src="img/proyecto-general.jpg" alt="Ficha de un proyecto" loading="lazy"><figcaption>Ficha de proyecto</figcaption></figure>
+</li>
+
+<li class="etapa" id="etapa-taller">
+ <div class="etapa-num">3</div>
+ <div>
+  <div class="etapa-fase">Mientras se fabrica</div>
+  <h3><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>El taller ficha sus horas</h3>
+  <p>En una <b>tablet del taller</b>, con botones grandes y teclado en pantalla, cada operario se identifica con su código e indica en qué molde,
+  tarea y máquina empieza a trabajar. Al terminar, finaliza la tarea. También puede fichar la entrada y la salida.</p>
+  <p>Cada fichaje suma al proyecto su <b>coste real</b> (operario y máquina), y puedes marcar los reprocesos para analizarlos aparte.</p>
+  <p class="resultado"><b>Resultado:</b> las horas reales de cada molde, sin partes en papel ni hojas de cálculo.</p>
+  <p class="enlaces">Más detalle: <a href="guia-taller-fichar.html">Fichar en el taller</a> · <a href="guia-produccion-revisar.html">Revisar y corregir fichajes</a></p>
+ </div>
+ <figure><img src="img/terminal-activos.jpg" alt="Terminal de fichaje con los trabajos en marcha" loading="lazy"><figcaption>Terminal de fichaje del taller</figcaption></figure>
+</li>
+
+<li class="etapa" id="etapa-compras">
+ <div class="etapa-num">4</div>
+ <div>
+  <div class="etapa-fase">Mientras se fabrica</div>
+  <h3><svg class="ico" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M3 4h3l2.5 11h10L21 8H7"/></svg>Las compras se imputan al molde</h3>
+  <p>Registras los <b>albaranes de proveedor</b> (acero, normalizados, tratamientos, subcontratas) y cada línea se asigna al proyecto al que corresponde.
+  Una compra para varios moldes se reparte entre ellos. Quien recibe la mercancía puede <b>fotografiar el albarán con el móvil</b> y completarlo después en la oficina.</p>
+  <p class="resultado"><b>Resultado:</b> el coste del molde incluye de verdad todo lo que has comprado para él.</p>
+  <p class="enlaces">Más detalle: <a href="guia-compras-albaran.html">Registrar un albarán de proveedor</a> · <a href="guia-compras-movil.html">Albaranes desde el móvil</a></p>
+ </div>
+ <figure><img src="img/albaran-proveedor.jpg" alt="Albarán de proveedor imputado a un proyecto" loading="lazy"><figcaption>Albarán de proveedor imputado a un proyecto</figcaption></figure>
+</li>
+
+<li class="etapa" id="etapa-entrega">
+ <div class="etapa-num">5</div>
+ <div>
+  <div class="etapa-fase">Al entregar</div>
+  <h3><svg class="ico" viewBox="0 0 24 24"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>Entregas y facturas al cliente</h3>
+  <p>Generas los <b>albaranes al cliente</b>: de entrega, de muestras o como hitos de facturación (por ejemplo, 40 % al pedido, 30 % con muestras y 30 % a la
+  aprobación). El cliente puede <b>firmar en la tablet</b>, y el albarán sale en PDF con la imagen de tu empresa o por correo. Después lo pasas a tu programa de facturación,
+  <b>Classic Ges</b>, sin repetir datos.</p>
+  <p class="resultado"><b>Resultado:</b> la entrega queda documentada y lista para facturar.</p>
+  <p class="enlaces">Más detalle: <a href="guia-venta-albaran.html">Emitir un albarán al cliente</a> · <a href="guia-proyecto-cerrar.html">Facturar y cerrar un proyecto</a></p>
+ </div>
+ <figure><img src="img/albaran.jpg" alt="Albarán de proyecto" loading="lazy"><figcaption>Albarán de proyecto</figcaption></figure>
+</li>
+
+<li class="etapa" id="etapa-analisis">
+ <div class="etapa-num">6</div>
+ <div>
+  <div class="etapa-fase">En todo momento</div>
+  <h3><svg class="ico" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg>Sabes cuánto cuesta y cuánto ganas</h3>
+  <p>El <b>resumen de costes</b> compara lo estimado con lo real, por tarea y por familia de material, y calcula el beneficio del molde.
+  No hace falta esperar al final: se actualiza con cada fichaje y cada albarán. Al cerrar el proyecto, los costes y el beneficio quedan fijados, y las
+  reparaciones o garantías posteriores se suman al molde original.</p>
+  <p class="resultado"><b>Resultado:</b> sabes qué moldes te dejan margen y cuáles no, y tus próximos presupuestos son más precisos.</p>
+  <p class="enlaces">Más detalle: <a href="guia-proyecto-costes.html">Controlar costes y beneficio</a> · <a href="guia-informes.html">Exportar listados e informes</a></p>
+ </div>
+ <figure><img src="img/proyecto-costes.jpg" alt="Resumen de costes de un proyecto" loading="lazy"><figcaption>Resumen de costes de un proyecto</figcaption></figure>
+</li>
+
+</ol>
+
+<h2 id="la-idea-clave">La idea clave: lo previsto frente a lo real</h2>
+<p>Lo que hace útil a la aplicación es que <b>la estimación del presupuesto no se pierde</b>: pasa al proyecto y se compara con los fichajes y las compras a medida que llegan.
+Así detectas una desviación cuando todavía puedes corregirla, no cuando ya has entregado.</p>
+
+<div class="comparativa" role="img" aria-label="Ejemplo: horas previstas 3.500 euros y reales 3.900; materiales previstos 4.000 y reales 3.800; precio 10.000 euros, coste real 7.700 y beneficio 2.300">
+ <h4>Ejemplo de un molde en curso</h4>
+ <div class="comp-fila">
+  <b>Horas del taller</b><small>Previsto en el presupuesto · real según los fichajes</small>
+  <div class="barra prev"><span>Previsto</span><span class="pista"><i style="width:77.8%"></i></span><span>3.500 €</span></div>
+  <div class="barra sobre"><span>Real</span><span class="pista"><i style="width:86.7%"></i></span><span>3.900 €</span></div>
+ </div>
+ <div class="comp-fila">
+  <b>Materiales y subcontratas</b><small>Previsto en el presupuesto · real según los albaranes de proveedor</small>
+  <div class="barra prev"><span>Previsto</span><span class="pista"><i style="width:88.9%"></i></span><span>4.000 €</span></div>
+  <div class="barra"><span>Real</span><span class="pista"><i style="width:84.4%"></i></span><span>3.800 €</span></div>
+ </div>
+ <div class="comp-total">
+  <div><small>Precio acordado</small><b>10.000 €</b></div>
+  <div><small>Coste real acumulado</small><b>7.700 €</b></div>
+  <div class="gana"><small>Beneficio</small><b>2.300 € · 23 %</b></div>
+ </div>
+ <p class="leyenda">Importes inventados, solo para ilustrar. Aquí se gastaron 400 € más de horas de lo previsto, y se compensaron en parte con un ahorro de 200 € en materiales.</p>
+</div>
+
+<h2 id="quien-la-usa">Quién la usa y para qué</h2>
+<p>No hace falta instalar nada: es una aplicación web que se usa desde el navegador, en el ordenador, la tablet o el móvil.</p>
+<div class="roles">
+ <div class="rol">
+  <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/></svg>
+  <b>Oficina y dirección</b>
+  <p>Presupuestan, abren y siguen los proyectos, emiten albaranes y analizan costes y beneficios.</p>
+  <a href="acceso.html">Acceder y moverse</a>
+ </div>
+ <div class="rol">
+  <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M11 18h2"/></svg>
+  <b>Taller</b>
+  <p>Los operarios fichan en la tablet: en qué molde, qué tarea y qué máquina. Pensado para usarse con el dedo.</p>
+  <a href="guia-taller-fichar.html">Fichar en el taller</a>
+ </div>
+ <div class="rol">
+  <svg viewBox="0 0 24 24"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
+  <b>Compras y recepción</b>
+  <p>Registran los albaranes de proveedor, incluso desde el móvil con una foto, y los imputan a los moldes.</p>
+  <a href="guia-compras-albaran.html">Albarán de proveedor</a>
+ </div>
+ <div class="rol">
+  <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+  <b>Tus clientes</b>
+  <p>No entran en la aplicación: reciben de ti presupuestos, informes de situación y albaranes en PDF o por correo.</p>
+  <a href="guia-proyecto-situacion.html">Informe de situación</a>
+ </div>
+</div>
+
+<h2 id="se-conecta-con">Se adapta a tu empresa y se conecta con tu facturación</h2>
+<ul>
+ <li><b>Tus datos de partida</b>: tus tareas, máquinas, costes por hora, materiales y márgenes se configuran una vez y se usan en todo. <a href="guia-puesta-en-marcha.html">Puesta en marcha</a>.</li>
+ <li><b>Classic Ges</b>: sincronizas clientes y proveedores y exportas los albaranes para facturarlos, sin teclear dos veces.</li>
+ <li><b>Tu imagen</b>: los documentos salen con tu logo, colores y textos legales. Se pueden descargar en PDF o Excel. <a href="guia-informes.html">Informes y exportación</a>.</li>
+ <li><b>Correo</b>: envías los albaranes al cliente desde la propia aplicación, con tu cuenta de correo.</li>
+</ul>
+
+<h2 id="quiero-mas-detalle">Quiero ver más detalle</h2>
+<p>Elige por dónde seguir:</p>
+<div class="tarjetas">
+ <a class="tarjeta" href="guia-puesta-en-marcha.html"><b>Voy a empezar a usarla</b><span>Qué configurar primero y en qué orden.</span></a>
+ <a class="tarjeta" href="guia-presupuesto-crear.html"><b>Quiero hacer un presupuesto</b><span>Paso a paso, desde el alta hasta el envío al cliente.</span></a>
+ <a class="tarjeta" href="guia-proyecto-costes.html"><b>Quiero saber cuánto gano</b><span>Cómo leer el resumen de costes y el beneficio.</span></a>
+ <a class="tarjeta" href="ref-presupuestos.html"><b>Qué significa cada pantalla</b><span>Referencia de campos, pestañas y botones.</span></a>
+ <a class="tarjeta" href="faq.html"><b>Tengo una duda concreta</b><span>Preguntas frecuentes y glosario de términos.</span></a>
+ <a class="tarjeta" href="index.html"><b>Ver todo el índice</b><span>Inicio de la documentación, con todas las guías.</span></a>
+</div>
+<div class="consejo"><strong>Consejo</strong>Usa el buscador de arriba (o la tecla <kbd>/</kbd>) para encontrar cualquier tema por una palabra, por ejemplo «fichar», «versión» o «albarán».</div>
+</article>
+</main>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

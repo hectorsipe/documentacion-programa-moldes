@@ -11,6 +11,9 @@
   --nota: #EEF3F9;
   --aviso: #FFF6E5;
   --aviso-borde: #F0B44C;
+  --previsto: #B9C8DA;
+  --bueno: #2EA44F;
+  --malo: #D64545;
   --sombra: 0 1px 3px rgba(16, 38, 64, .08), 0 4px 16px rgba(16, 38, 64, .06);
   --ancho-menu: 280px;
   --alto-cabecera: 60px;
@@ -21,6 +24,7 @@
     --fondo: #12181F; --fondo-2: #19212B; --texto: #E3E9EF; --texto-2: #A3B1BF;
     --borde: #2A3542; --nota: #1A2B3D; --aviso: #3A2E17; --aviso-borde: #C89235;
     --sombra: 0 1px 3px rgba(0,0,0,.4);
+    --previsto: #3F5269; --bueno: #4CC36E; --malo: #F07272;
   }
 }
 :root[data-theme="dark"] {
@@ -28,6 +32,7 @@
   --fondo: #12181F; --fondo-2: #19212B; --texto: #E3E9EF; --texto-2: #A3B1BF;
   --borde: #2A3542; --nota: #1A2B3D; --aviso: #3A2E17; --aviso-borde: #C89235;
   --sombra: 0 1px 3px rgba(0,0,0,.4);
+  --previsto: #3F5269; --bueno: #4CC36E; --malo: #F07272;
 }
 
 * { box-sizing: border-box; }
@@ -147,6 +152,76 @@ details[open] summary { border-bottom: 1px solid var(--borde); margin-bottom: 8p
 .visor { position: fixed; inset: 0; background: rgba(8, 14, 22, .88); z-index: 50; display: none; place-items: center; padding: 24px; cursor: zoom-out; }
 .visor.abierto { display: grid; }
 .visor img { max-width: 100%; max-height: 100%; border-radius: 6px; background: #fff; }
+
+/* Página "Qué hace el programa" */
+.destacado { display: flex; gap: 14px; align-items: center; margin: 22px 0; padding: 16px 20px; border-radius: 12px;
+  background: var(--azul-claro); color: var(--texto); border: 1px solid var(--azul-app); }
+.destacado:hover { text-decoration: none; box-shadow: var(--sombra); }
+.destacado svg { flex: none; width: 34px; height: 34px; color: var(--azul-app); }
+.destacado b { display: block; color: var(--azul); font-size: 17px; }
+.destacado span { font-size: 14.5px; color: var(--texto-2); }
+
+.ico { width: 1.15em; height: 1.15em; vertical-align: -.2em; margin-right: 6px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+.fases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin: 22px 0; }
+.fase { position: relative; padding: 16px 18px 18px; border: 1px solid var(--borde); border-top: 5px solid var(--azul-app); border-radius: 10px; background: var(--fondo); box-shadow: var(--sombra); }
+.fase:not(:last-child)::after { content: "→"; position: absolute; right: -22px; top: 50%; transform: translateY(-50%); font-size: 22px; color: var(--texto-2); }
+.fase small { display: block; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--texto-2); }
+.fase b { display: block; font-size: 20px; color: var(--azul); margin: 2px 0 6px; }
+.fase p { margin: 0 0 10px; font-size: 14.5px; color: var(--texto-2); }
+.fase .pregunta { font-style: italic; color: var(--texto); }
+.fase ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.fase li { margin: 0; }
+.fase li a { display: inline-block; padding: 3px 10px; border-radius: 20px; background: var(--azul-claro); color: var(--azul); font-size: 13.5px; font-weight: 600; }
+.fase li a:hover { text-decoration: none; background: var(--azul-app); color: #fff; }
+
+.etapas { list-style: none; padding: 0; margin: 24px 0; }
+.etapa { position: relative; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 0 20px; padding-bottom: 36px; margin: 0; }
+.etapa::before { content: ""; position: absolute; left: 19px; top: 42px; bottom: 6px; width: 2px; background: var(--azul-claro); }
+.etapa:last-child { padding-bottom: 0; }
+.etapa:last-child::before { display: none; }
+.etapa-num { width: 40px; height: 40px; border-radius: 50%; background: var(--azul-app); color: #fff; font-weight: 700; font-size: 18px; display: grid; place-items: center; }
+.etapa-fase { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--texto-2); }
+.etapa h3 { margin: 2px 0 6px; font-size: 20px; color: var(--azul); }
+.etapa p { margin: 6px 0; }
+.etapa .resultado { padding: 8px 12px; border-radius: 8px; background: var(--nota); font-size: 15px; }
+.etapa .enlaces { font-size: 14.5px; color: var(--texto-2); }
+.etapa figure { grid-column: 2; margin: 12px 0 0; }
+.etapa figure img { box-shadow: var(--sombra); }
+.etapa figcaption { font-size: 12.5px; }
+
+.comparativa { margin: 20px 0; padding: 18px 20px; border: 1px solid var(--borde); border-radius: 12px; background: var(--fondo-2); }
+.comparativa h4 { margin: 0 0 12px; font-size: 15px; color: var(--texto-2); font-weight: 600; }
+.comp-fila { margin: 14px 0; }
+.comp-fila > b { display: block; font-size: 15px; }
+.comp-fila > small { display: block; color: var(--texto-2); margin-bottom: 6px; }
+.barra { display: grid; grid-template-columns: 70px 1fr 80px; gap: 10px; align-items: center; font-size: 13.5px; margin: 3px 0; }
+.barra .pista { height: 14px; border-radius: 7px; background: var(--fondo); border: 1px solid var(--borde); overflow: hidden; }
+.barra .pista i { display: block; height: 100%; border-radius: 7px; background: var(--azul-app); }
+.barra.prev .pista i { background: var(--previsto); }
+.barra.sobre .pista i { background: var(--malo); }
+.barra span:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+.comp-total { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 18px; }
+.comp-total div { padding: 10px 12px; border-radius: 8px; background: var(--fondo); border: 1px solid var(--borde); }
+.comp-total small { display: block; color: var(--texto-2); font-size: 12.5px; }
+.comp-total b { font-size: 19px; font-variant-numeric: tabular-nums; }
+.comp-total .gana b { color: var(--bueno); }
+.comparativa .leyenda { margin: 12px 0 0; font-size: 13px; color: var(--texto-2); }
+
+.roles { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 14px; margin: 18px 0; }
+.rol { padding: 16px; border: 1px solid var(--borde); border-radius: 10px; background: var(--fondo); }
+.rol svg { width: 30px; height: 30px; color: var(--azul-app); fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.rol b { display: block; margin: 6px 0 2px; color: var(--azul); }
+.rol p { margin: 0 0 8px; font-size: 14px; color: var(--texto-2); line-height: 1.45; }
+.rol a { font-size: 14px; font-weight: 600; }
+
+@media (max-width: 800px) {
+  .fases { grid-template-columns: 1fr; gap: 28px; }
+  .fase:not(:last-child)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: -30px; transform: translateX(-50%); }
+  .etapa { grid-template-columns: 40px minmax(0, 1fr); gap: 0 14px; }
+  .barra { grid-template-columns: 58px 1fr 68px; }
+  .comp-total { grid-template-columns: 1fr; }
+}
 
 /* Móvil */
 @media (max-width: 960px) {

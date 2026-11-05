@@ -6,6 +6,7 @@
 const NAV = [
   { seccion: "Empezar", paginas: [
     ["index.html", "Inicio"],
+    ["que-hace.html", "Qué hace el programa"],
     ["acceso.html", "Acceder y moverse por la aplicación"],
     ["listados.html", "Trabajar con los listados"],
   ]},
