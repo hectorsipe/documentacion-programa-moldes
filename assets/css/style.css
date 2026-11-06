@@ -80,6 +80,8 @@ a:hover { text-decoration: underline; }
   width: 38px; height: 38px; display: inline-grid; place-items: center; cursor: pointer; flex: none;
 }
 .boton-menu { display: none; }
+.enlace-recorrido { flex: none; padding: 7px 16px; border-radius: 20px; background: var(--azul-app); color: #fff; font-size: 14px; font-weight: 700; white-space: nowrap; }
+.enlace-recorrido:hover { text-decoration: none; filter: brightness(1.08); }
 
 /* Menú lateral */
 .menu {
@@ -121,6 +123,9 @@ figure img {
   box-shadow: var(--sombra); cursor: zoom-in; background: #fff;
 }
 figure.movil img { max-width: 300px; margin: 0 auto; }
+/* Etiqueta para las capturas con datos de demostración */
+.ficticio { display: inline-block; margin-left: 10px; padding: 1px 9px; border-radius: 10px; background: var(--aviso); color: var(--texto); border: 1px solid var(--aviso-borde);
+  font-size: 12px; font-weight: 600; white-space: nowrap; }
 figcaption { margin-top: 8px; font-size: 13.5px; color: var(--texto-2); text-align: center; }
 .nota, .consejo, .aviso {
   border-left: 4px solid var(--azul-app); background: var(--nota); padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 18px 0;
@@ -251,6 +256,7 @@ details[open] summary { border-bottom: 1px solid var(--borde); margin-bottom: 8p
   .menu.abierto { transform: none; }
   .contenido { margin-left: 0; padding: calc(var(--alto-cabecera) + 20px) 16px 48px; }
   .cabecera { padding: 0 12px; gap: 10px; }
+  .enlace-recorrido { display: none; }
   .cabecera .marca span { display: none; }
   h1 { font-size: 26px; }
 }

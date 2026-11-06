@@ -6,6 +6,7 @@
 const NAV = [
   { seccion: "Empezar", paginas: [
     ["index.html", "Inicio"],
+    ["recorrido.html", "Recorrido por el programa"],
     ["que-hace.html", "Qué hace el programa"],
     ["acceso.html", "Acceder y moverse por la aplicación"],
     ["guia-puesta-en-marcha.html", "Puesta en marcha: configurar la empresa"],
@@ -70,6 +71,7 @@ const NAV = [
       <input type="search" placeholder="Buscar… (fichar, versión, albarán)" aria-label="Buscar">
       <div class="resultados" role="listbox"></div>
     </div>
+    <a class="enlace-recorrido" href="recorrido.html">Recorrido</a>
     <button class="boton-icono boton-tema" aria-label="Cambiar entre tema claro y oscuro" title="Tema claro / oscuro"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>`;
   document.body.prepend(cab);
 
