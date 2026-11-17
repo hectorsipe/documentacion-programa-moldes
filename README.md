@@ -21,6 +21,8 @@ Web de ayuda para los clientes de **Gestión de Moldes** (SIPE Informática). Es
 <figure><img src="img/nombre.jpg" alt="Descripción" loading="lazy"><figcaption>Descripción</figcaption></figure>
 ```
 
+Todas las capturas son de demostración: cada pie de imagen lleva la etiqueta `<span class="ficticio">Datos ficticios</span>` (si falta, `site.js` la añade sola).
+
 Elementos disponibles en el contenido: `<ol class="pasos">` (pasos numerados), `<div class="nota">`, `<div class="consejo">`,
 `<div class="aviso">`, `<span class="boton">` (botón de la aplicación), `<span class="campo">` (campo o pestaña), tablas y `<details>`
 (preguntas desplegables).

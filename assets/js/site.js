@@ -112,9 +112,17 @@ const NAV = [
     art.append(pie);
   }
 
+  // Todas las capturas son de demostración: si a una figura le falta la etiqueta, se añade sola
+  document.querySelectorAll("figure").forEach(fig => {
+    if (!fig.querySelector("img")) return;
+    let pie = fig.querySelector("figcaption");
+    if (!pie) { pie = document.createElement("figcaption"); fig.append(pie); }
+    if (!pie.querySelector(".ficticio")) pie.insertAdjacentHTML("beforeend", ' <span class="ficticio">Datos ficticios</span>');
+  });
+
   // Visor de imágenes
   const visor = document.createElement("div");
-  visor.className = "visor"; visor.innerHTML = "<img alt=''>";
+  visor.className = "visor"; visor.innerHTML = "<img alt=''><span class='ficticio visor-etiqueta'>Datos ficticios</span>";
   document.body.append(visor);
   visor.onclick = () => visor.classList.remove("abierto");
   document.addEventListener("keydown", e => { if (e.key === "Escape") visor.classList.remove("abierto"); });
