@@ -18,8 +18,30 @@ fases y materiales y la fecha de entrega acordada.</p>
 
 <h2 id="actualizar-la-situacion">Actualizar la situación</h2>
 <ol class="pasos"><li>Abre el proyecto y, en la pestaña General, pulsa <span class="boton">Informe de Situación</span>.</li><li>En la pestaña <span class="campo">Fases</span> verás cada fase con las horas reales frente a las estimadas y su porcentaje. Ajusta el avance de cada fase con el deslizador o desplegando sus tareas; marca la casilla de las fases terminadas.</li><li>En <span class="campo">Materiales</span> revisa qué materiales están recibidos.</li><li>A la derecha, elige la <span class="campo">Situación del proyecto</span> (<b>En tiempo</b>, <b>Adelantado</b> o <b>Retraso</b>) y escribe la <span class="campo">Descripción de la situación</span>, que es el texto que leerá el cliente.</li><li>Revisa la <span class="campo">Fecha de la revisión</span> y la <span class="campo">Fecha de entrega acordada</span>. La aplicación calcula los días que faltan.</li><li>Pulsa <span class="boton">Guardar y descargar</span> para obtener el PDF, o <span class="boton">Guardar</span> si solo quieres registrar la situación.</li></ol>
-<div class="nota"><strong>Nota</strong>Las horas en rojo indican que la fase ya ha superado lo estimado. Marca <b>Ignorar fases sin tareas estimadas</b> para que no aparezcan fases que no aplican a este trabajo.</div>
+<div class="nota"><strong>Nota</strong>Las horas en rojo indican que la fase ya ha superado lo estimado. Con <b>Ignorar fases sin tareas estimadas</b> marcado, las fases que no aplican a este trabajo se ven en gris y no salen en el PDF. Ver <a href="#fases-y-tareas">Qué fases y tareas aparecen</a>.</div>
 <div class="consejo"><strong>Consejo</strong>Al elegir la situación se propone un texto estándar para cada caso. Modifícalo para dar al cliente detalles concretos.</div>
+
+<h2 id="fases-y-tareas">Qué fases y tareas aparecen</h2>
+<p>Las fases y tareas que puedes marcar no son siempre todas las de <a href="ref-configuracion.html#trabajos">Configuración › Trabajos</a>.
+La lista se prepara al abrir la ventana a partir de tres fuentes: la última situación guardada, la <a href="guia-presupuesto-estimar.html">estimación del presupuesto</a> y los fichajes del taller.</p>
+
+<h3>La primera vez que se abre</h3>
+<p>Si el proyecto aún no tiene ninguna situación guardada, aparecen <b>todas las fases</b> de Configuración. Las tareas de cada fase dependen del presupuesto:</p>
+<div class="tabla-scroll"><table><thead><tr><th>Presupuesto del proyecto</th><th>Tareas que aparecen en cada fase</th></tr></thead><tbody><tr><td>Con estimación</td><td>Solo las tareas que tienen horas en la estimación.</td></tr><tr><td>Sin estimación</td><td>Todas las tareas de la fase.</td></tr><tr><td>Sin presupuesto</td><td>Ninguna: las fases aparecen vacías, con el texto «No hay tareas previstas para esta fase».</td></tr></tbody></table></div>
+<p>Si hay estimación, la casilla <b>Ignorar fases sin tareas estimadas</b> viene marcada. Esta primera situación se guarda automáticamente al abrir la ventana.</p>
+
+<h3>Cada vez que se abre</h3>
+<p>Se parte de la última situación guardada y se añade lo que falte:</p>
+<ul><li>Las tareas con horas en la estimación que todavía no estén en la lista.</li><li>Las tareas en las que se ha fichado en el proyecto, aunque no estén estimadas.</li></ul>
+<p>Si la fase de una de esas tareas no estaba en la lista, se añade también. En resumen, una tarea aparece si ya estaba en la situación, si está estimada o si alguien ha fichado en ella.</p>
+<div class="aviso"><strong>Importante</strong><ul><li>Las tareas no se quitan nunca: si eliminas una tarea de la estimación, sigue apareciendo en la situación.</li><li>Mientras nadie haya fichado en el proyecto, las tareas que añadas a la estimación después de la primera situación no aparecen.</li><li>Una fase creada en Configuración después de la primera situación solo aparece cuando alguna de sus tareas se estima o se ficha.</li></ul></div>
+
+<h3>Fases sin tareas</h3>
+<p>Con <b>Ignorar fases sin tareas estimadas</b> marcado, las fases sin tareas se ven en gris y no se pueden marcar como completas ni mover su porcentaje.</p>
+
+<h3>En el PDF</h3>
+<p>El PDF que recibe el cliente muestra solo las fases, con su barra de avance; no detalla las tareas.</p>
+<ul><li>Con <b>Ignorar fases sin tareas estimadas</b> marcado, incluye solo las fases que tienen alguna tarea con horas en la estimación. Una fase que aparece en pantalla solo porque se ha fichado en ella no sale en el PDF.</li><li>Con la casilla desmarcada, incluye todas las fases de la situación.</li></ul>
 
 <h2 id="subtareas">Subtareas</h2>
 <p>Si el proyecto tiene <a href="guia-proyecto-detalle.html">subtareas</a>, al desplegar una fase verás debajo de cada tarea el texto
