@@ -21,6 +21,7 @@ const NAV = [
   ]},
   { seccion: "Guías: proyectos", paginas: [
     ["guia-proyecto-seguimiento.html", "Seguir un proyecto"],
+    ["guia-proyecto-detalle.html", "Subtareas y estrategia de fabricación"],
     ["guia-proyecto-situacion.html", "Informar al cliente de la situación"],
     ["guia-proyecto-costes.html", "Controlar costes y beneficio"],
     ["guia-proyecto-cerrar.html", "Facturar y cerrar un proyecto"],
@@ -119,6 +120,14 @@ const NAV = [
     if (!pie) { pie = document.createElement("figcaption"); fig.append(pie); }
     if (!pie.querySelector(".ficticio")) pie.insertAdjacentHTML("beforeend", ' <span class="ficticio">Datos ficticios</span>');
   });
+
+  // Si el enlace apunta a una pregunta desplegable (<details id="...">), se abre sola
+  const abrirDetalle = () => {
+    const d = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (d && d.tagName === "DETAILS") d.open = true;
+  };
+  abrirDetalle();
+  window.addEventListener("hashchange", abrirDetalle);
 
   // Visor de imágenes
   const visor = document.createElement("div");

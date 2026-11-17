@@ -23,6 +23,7 @@ te enlazamos a ella para que veas cómo se usa.</p>
 <div class="tabla-scroll"><table>
 <thead><tr><th>Versión</th><th>Fecha</th><th>Lo más destacado</th></tr></thead>
 <tbody>
+<tr><td><a href="#v2-0-0">2.0.0</a></td><td>16 nov 2026</td><td>Subtareas en los proyectos y estrategia de fabricación. Se puede instalar como aplicación. Filtro por empleado en Producción.</td></tr>
 <tr><td><a href="#v1-9-10">1.9.10</a></td><td>29 oct 2026</td><td>Los listados recuerdan filtros y página, y puedes limpiarlos con un clic. Seleccionar varias tareas a la vez en la estimación.</td></tr>
 <tr><td><a href="#v1-9-9">1.9.9</a></td><td>7 oct 2026</td><td>El terminal de fichaje se actualiza solo cada 10 segundos.</td></tr>
 <tr><td><a href="#v1-9-8">1.9.8</a></td><td>24 ago 2026</td><td>Firma de albaranes en pantalla, envío por correo y exportación de las listas de la estimación.</td></tr>
@@ -33,7 +34,30 @@ te enlazamos a ella para que veas cómo se usa.</p>
 <tr><td><a href="#v1-9-3">1.9.3</a></td><td>25 may 2026</td><td>Paquete de mejoras de uso en presupuestos, proyectos y terminal de fichaje.</td></tr>
 </tbody></table></div>
 
-<h2 id="v1-9-10" class="version-cab">Versión 1.9.10 <span class="version-actual">Última</span> <small>29 de octubre de 2026</small></h2>
+<h2 id="v2-0-0" class="version-cab">Versión 2.0.0 <span class="version-actual">Última</span> <small>16 de noviembre de 2026</small></h2>
+<p class="version-resumen">Más detalle en cada molde: subtareas y estrategia de fabricación.</p>
+<ul class="cambios">
+ <li><span class="etiqueta novedad">Novedad</span><b>Pestaña «Detalle» en la ficha de proyecto.</b> Junto a General aparece una pestaña nueva para administradores y empleados de oficina, con dos bloques: la estrategia de fabricación y las subtareas.
+ <a class="mas" href="guia-proyecto-detalle.html">Más información: Subtareas y estrategia de fabricación</a></li>
+ <li><span class="etiqueta novedad">Novedad</span><b>Estrategia de fabricación.</b> Un texto libre para dejar escrito cómo se va a fabricar el molde. Se guarda con su propio botón y no se pierde al guardar la pestaña General.</li>
+ <li><span class="etiqueta novedad">Novedad</span><b>Subtareas.</b> Puedes dividir cualquier tarea del proyecto en subtareas (por ejemplo, cada placa dentro del mecanizado) y marcarlas como realizadas. Las subtareas que ya tienen fichajes no se pueden eliminar ni cambiar de tarea.</li>
+ <li><span class="etiqueta novedad">Novedad</span><b>Elegir la subtarea al fichar.</b> En el terminal, si la tarea tiene subtareas en ese proyecto, aparece un paso con un botón por subtarea y es obligatorio elegir una para iniciar. Al reanudar un trabajo se mantiene su subtarea. Desde la oficina, la subtarea de un fichaje se puede indicar o corregir y es opcional.
+ <a class="mas" href="guia-taller-fichar.html#3-iniciar-una-tarea">Más información: Fichar en el taller</a></li>
+ <li><span class="etiqueta">Mejora</span><b>Subtareas en el informe de situación.</b> Bajo cada tarea se ven sus subtareas con una casilla y el recuento de realizadas. Al completar todas, la tarea se marca como completada (y la fase, si era la última). Las subtareas de tareas aún sin estimar ni fichar aparecen en «Otras subtareas».
+ <a class="mas" href="guia-proyecto-situacion.html#subtareas">Más información: Informar al cliente de la situación</a></li>
+ <li><span class="etiqueta novedad">Novedad</span><b>Instalar como aplicación.</b> Gestión de Moldes se puede instalar en el ordenador, la tablet o el móvil desde el navegador, con su propio icono y en una ventana sin barra de direcciones.
+ <a class="mas" href="faq.html#instalar-la-aplicacion">Más información: Preguntas frecuentes</a></li>
+ <li><span class="etiqueta">Mejora</span><b>Filtro por empleado en Producción.</b> El listado de fichajes de tareas tiene un desplegable <span class="campo">Empleado</span>, y el botón <span class="boton">Generar Informe</span> respeta el empleado elegido y el texto del buscador.
+ <a class="mas" href="guia-produccion-revisar.html">Más información: Revisar y corregir fichajes</a></li>
+ <li><span class="etiqueta">Mejora</span><b>Eliges qué datos pasan de General a la ficha técnica.</b> Cuando los datos de la pestaña General no coinciden con los de la ficha técnica, una tabla muestra el valor actual y el nuevo de cada campo, y marcas solo los que quieres actualizar. Ahora también compara las observaciones.
+ <a class="mas" href="guia-presupuesto-ficha.html#si-cambias-datos-en-general">Más información: Rellenar la ficha técnica</a></li>
+ <li><span class="etiqueta correccion">Corrección</span><b>Validez y forma de pago de la ficha técnica.</b> Al abrir una ficha ya guardada se mantenían los valores por defecto en lugar de los guardados. Ahora los valores por defecto solo se proponen en fichas nuevas.</li>
+ <li><span class="etiqueta correccion">Corrección</span><b>Miniatura al duplicar un presupuesto o crear una versión.</b> La imagen de la ficha técnica se copia como un archivo independiente, de modo que borrarla en la copia ya no afecta al presupuesto original. Además, la pestaña Adjuntos se actualiza en cuanto subes o quitas esa imagen.
+ <a class="mas" href="guia-presupuesto-versiones.html">Más información: Versiones y duplicados</a></li>
+ <li><span class="etiqueta correccion">Corrección</span><b>Fichajes sin coste por hora.</b> Se corrige un error al calcular el coste de fichajes de empleados o máquinas que no tenían coste por hora definido.</li>
+</ul>
+
+<h2 id="v1-9-10" class="version-cab">Versión 1.9.10 <small>29 de octubre de 2026</small></h2>
 <p class="version-resumen">Los listados recuerdan lo que estabas haciendo.</p>
 <ul class="cambios">
  <li><span class="etiqueta">Mejora</span><b>Los listados recuerdan tu búsqueda, tus filtros y la página.</b> Si abres una ficha y vuelves al listado, lo encuentras como lo dejaste, sin tener que volver a filtrar.
